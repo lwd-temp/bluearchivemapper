@@ -1,6 +1,8 @@
 import json
 import pathlib
 import sys
+import traceback
+import argparse
 
 from PIL import Image
 
@@ -8,6 +10,7 @@ from data import load_data
 from maputil import get_tiles
 from tilemap import TileMap
 
+args = None
 
 def load_assets():
     return {asset: im for asset, im in _load_assets()}
@@ -87,23 +90,41 @@ def map_event_content_stages(datadir, outdir, data, assets):
             continue
 
 
-def mapper(datadir, outdir, what):
-    data = load_data(datadir)
+def mapper(what):
+    global args
+
+    data = load_data(args['data_primary'], args['data_secondary'], args['translation'])
     assets = load_assets()
     if what == 'campaign':
-        map_campaign_stages(datadir, outdir, data, assets)
+        map_campaign_stages(args['data_primary'], args['outdir'], data, assets)
     elif what == 'events':
-        map_event_content_stages(datadir, outdir, data, assets)
+        map_event_content_stages(args['data_primary'], args['outdir'], data, assets)
     else:
         print(f"Don't know how to map {what}")
 
 
 def main():
-    try:
-        mapper(sys.argv[1], sys.argv[2], sys.argv[3])
-    except IndexError:
-        print('usage: mapper.py <datadir> <outdir> <campaign/events>')
+    global args
 
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('map_type', metavar='TYPE', help='campaign/events')
+    parser.add_argument('-data_primary', metavar='DIR', help='Fullest (JP) game version data')
+    parser.add_argument('-data_secondary', metavar='DIR', help='Secondary (Global) version data to include localisation from')
+    parser.add_argument('-translation', metavar='DIR', help='Additional translations directory')
+    parser.add_argument('-outdir', metavar='DIR', help='Output directory')
+
+    args = vars(parser.parse_args())
+    args['data_primary'] = args['data_primary'] == None and '../ba-data/jp' or args['data_primary']
+    args['data_secondary'] = args['data_secondary'] == None and '../ba-data/global' or args['data_secondary']
+    args['translation'] = args['translation'] == None and '../bluearchivewiki/translation' or args['translation']
+    args['outdir'] = args['outdir'] == None and 'out' or args['outdir']
+    #print(args)
+    try:
+         mapper(args['map_type'])
+    except:
+        parser.print_help()
+        traceback.print_exc()
 
 if __name__ == '__main__':
     main()
