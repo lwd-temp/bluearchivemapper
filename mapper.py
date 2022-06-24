@@ -108,7 +108,7 @@ def main():
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('map_type', metavar='TYPE', help='campaign/events')
+    parser.add_argument('map_type', metavar='<campaign/events>', help='campaign/events')
     parser.add_argument('-data_primary', metavar='DIR', help='Fullest (JP) game version data')
     parser.add_argument('-data_secondary', metavar='DIR', help='Secondary (Global) version data to include localisation from')
     parser.add_argument('-translation', metavar='DIR', help='Additional translations directory')

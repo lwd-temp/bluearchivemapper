@@ -15,6 +15,7 @@ from mapper import load_assets, map_campaign_stage
 from rewards import get_rewards
 
 WIKI_API = 'https://bluearchive.wiki/w/api.php'
+site = Site(WIKI_API)
 
 CAMPAIGN_STAGE_NAME_PATTERN = r'^CHAPTER0*(?P<chapter>\d+)_(?P<difficulty>Hard|Normal)_Main_Stage0*(?P<stage>\d+)$'
 
@@ -92,7 +93,7 @@ def render_mission_page(name, campaign_stage, data, tls):
 
 
 def missionpage(map, data, tls, assets):
-    global args
+    global args, site
 
     campaign_stage = get_campaign_stage(map, data)
 
@@ -104,46 +105,39 @@ def missionpage(map, data, tls, assets):
         f.write(text)
 
     if args['wiki'] != None:  
-        try:
-            site = Site(WIKI_API)
-            site.login(args['wiki'][0], args['wiki'][1])
-
-            print(f'Logged in to wiki, token {site.token()}')
-        except Exception as err:
-            print(f'Wiki error: {err}')
-            traceback.print_exc()
 
         # Upload map image
-        with io.BytesIO() as b:
-            map_campaign_stage(datadir, b, campaign_stage, data, assets)
-            b.seek(0)
-            site(
-                action='upload',
-                filename=f'{campaign_stage["Name"]}.png',
-                comment=f'Upload map image for {name}',
-                ignorewarnings=True,
-                token=site.token(),
-                POST=True,
-                EXTRAS={
-                    'files': {
-                        'file': b
-                    }
-                }
-            )
+        
+        # with io.BytesIO() as b:
+        #     map_campaign_stage(args['data_primary'], b, campaign_stage, data, assets)
+        #     b.seek(0)
+        #     site(
+        #         action='upload',
+        #         filename=f'{campaign_stage["Name"]}.png',
+        #         comment=f'Upload map image for {map}',
+        #         ignorewarnings=True,
+        #         token=site.token(),
+        #         POST=True,
+        #         EXTRAS={
+        #             'files': {
+        #                 'file': b
+        #             }
+        #         }
+        #     )
 
         # Upload mission page
 
         site(
             action='edit',
-            title=f'Missions/{name}',
+            title=f'Missions/{map}',
             text=text,
-            summary=f'Create mission page for {name}',
+            summary=f'Create mission page for {map}',
             token=site.token()
         )
 
 
 def main():
-    global args
+    global args, site
 
     parser = argparse.ArgumentParser()
 
@@ -153,19 +147,30 @@ def main():
     parser.add_argument('-translation', metavar='DIR', help='Additional translations directory')
     parser.add_argument('-outdir', metavar='DIR', help='Output directory')
     parser.add_argument('-wiki', nargs=2, metavar=('LOGIN', 'PASSWORD'), help='Publish data to wiki')
-    parser.add_argument('-wikipath', metavar='PATH', help='Parent material for the generated pages')
+    #parser.add_argument('-wikipath', metavar='PATH', help='Parent material for the generated pages')
 
     args = vars(parser.parse_args())
     args['data_primary'] = args['data_primary'] == None and '../ba-data/jp' or args['data_primary']
     args['data_secondary'] = args['data_secondary'] == None and '../ba-data/global' or args['data_secondary']
     args['translation'] = args['translation'] == None and '../bluearchivewiki/translation' or args['translation']
     args['outdir'] = args['outdir'] == None and 'out' or args['outdir']
-    args['wikipath'] = args['wikipath'] == None and 'Missions' or args['wikipath']
+    #args['wikipath'] = args['wikipath'] == None and 'Missions' or args['wikipath']
     #print(args)
     try:
         data = load_data(args['data_primary'], args['data_secondary'], args['translation'])
         tls = load_translations(args['translation'])
         assets = load_assets()
+
+        if args['wiki'] != None:  
+            try:
+                site = Site(WIKI_API)
+                site.login(args['wiki'][0], args['wiki'][1])
+
+                print(f'Logged in to wiki, token {site.token()}')
+            except Exception as err:
+                print(f'Wiki error: {err}')
+                traceback.print_exc()
+
 
         for map in args['map_id'].split(','):
             missionpage(map, data, tls, assets)

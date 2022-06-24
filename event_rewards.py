@@ -3,7 +3,7 @@ import re
 
 from data import load_data, load_translations
 
-Reward = collections.namedtuple('Reward', 'name,icon,tag,prob,amount')
+Reward = collections.namedtuple('Reward', 'name,tag,prob,amount')
 
 ignore_item_id = [
     500100, #bundle of one of: Novice Activity Report / Lesser Enhancement Stone / Booster Ticket / (1 random T1 oopart). All story stages seem to have it 
@@ -31,30 +31,38 @@ def translate_group_name(text):
 
 
 def get_currency_rewards(reward, data):
-    currency = data.currencies[reward['StageRewardId']]
+    currency = data.currencies[reward['RewardId']]
     name_en = 'NameEn' in data.localization[currency['LocalizeEtcId']] and data.localization[currency['LocalizeEtcId']]['NameEn'] or None
 
-    yield Reward(name_en, currency['Icon'], reward['RewardTag'], reward['StageRewardProb'] / 100, None)
+    yield Reward(name_en, reward['RewardTag'], reward['RewardProb'] / 100, reward['RewardAmount'])
 
 
 def get_equipment_rewards(reward, data):
-    item = data.equipment[reward['StageRewardId']]
+    item = data.equipment[reward['RewardId']]
     name_en = 'NameEn' in data.localization[item['LocalizeEtcId']] and data.localization[item['LocalizeEtcId']]['NameEn'] or None
 
-    yield Reward(name_en, item['Icon'], reward['RewardTag'], reward['StageRewardProb'] / 100, None)
+    yield Reward(name_en, reward['RewardTag'], reward['RewardProb'] / 100, reward['RewardAmount'])
 
 
 def get_item_rewards(reward, data):
-    item = data.items[reward['StageRewardId']]
+    item = data.items[reward['RewardId']]
     name_en = 'NameEn' in data.localization[item['LocalizeEtcId']] and data.localization[item['LocalizeEtcId']]['NameEn'] or None
 
-    yield Reward(name_en, item['Icon'], reward['RewardTag'], reward['StageRewardProb'] / 100, None)
+    yield Reward(name_en, reward['RewardTag'], reward['RewardProb'] / 100, reward['RewardAmount'])
+
+def get_character_rewards(reward, data):
+    print (f"Character reward {reward}")
+    #item = data.items[reward['RewardId']]
+    #name_en = 'NameEn' in data.localization[item['LocalizeEtcId']] and data.localization[item['LocalizeEtcId']]['NameEn'] or None
+
+    yield Reward('Character', 'RewardTag', 'RewardProb', None)
 
 
 def get_gacha_rewards(stage_reward, data):
-    for reward in _get_gacha_rewards(stage_reward['StageRewardId'], stage_reward['StageRewardProb'] / 100, data):
+    for reward in _get_gacha_rewards(stage_reward['RewardId'], stage_reward['RewardProb'] / 100, data):
         #print (reward)
         yield reward
+
 
 
 def _get_gacha_rewards(group_id, stage_reward_prob, data):
@@ -86,7 +94,7 @@ def _get_gacha_rewards(group_id, stage_reward_prob, data):
         amount = gacha_element['ParcelAmountMin'] == gacha_element['ParcelAmountMax'] and gacha_element['ParcelAmountMin'] or f"{gacha_element['ParcelAmountMin']}~{gacha_element['ParcelAmountMax']}"
 
 
-        yield Reward(name_en, item['Icon'], 'Other', prob > 5 and round(prob,1) or round(prob,2), amount)
+        yield Reward(name_en, 'Other', prob > 5 and round(prob,1) or round(prob,2), amount)
 
 
 def _get_gacha_rewards_recursive(group_id, stage_reward_prob, data):
@@ -122,12 +130,13 @@ _REWARD_TYPES = {
     'Currency': get_currency_rewards,
     'Equipment': get_equipment_rewards,
     'Item': get_item_rewards,
-    'GachaGroup': get_gacha_rewards
+    'GachaGroup': get_gacha_rewards,
+    'Character': get_character_rewards
 }
 
 
 def _get_rewards(campaign_stage, data):
-    rewards = data.campaign_stage_rewards[campaign_stage['CampaignStageRewardId']]
+    rewards = data.campaign_stage_rewards[campaign_stage['CampaignRewardId']]
     for reward in rewards:
         reward_type = reward['StageRewardParcelType']
         print (reward_type)
@@ -135,3 +144,38 @@ def _get_rewards(campaign_stage, data):
             yield from _REWARD_TYPES[reward_type](reward, data)
         except KeyError:
             print(f'Unknown StageRewardParcelType: {reward_type}')
+
+
+
+def get_event_rewards(campaign_stage, data):
+    rewards = collections.defaultdict(list)
+    for reward in _get_event_rewards(campaign_stage, data):
+        #print(reward)
+        rewards[reward.tag].append(reward)
+
+    return dict(rewards)
+
+def _get_event_rewards(campaign_stage, data):
+    rewards = data.event_content_stage_rewards[campaign_stage['EventContentStageRewardId']]
+    for reward in rewards:
+        reward_type = reward['RewardParcelType']
+        print (reward_type)
+        #try:
+        yield from _REWARD_TYPES[reward_type](reward, data)
+        #except KeyError:
+        #    print(f'Unknown RewardParcelType: {reward_type}')
+
+
+
+def main():
+    data = load_data('../ba-data/jp', '../ba-data/global', '../bluearchivewiki/translation')
+    #print(data.event_content_stages[8142301])
+    stage = data.event_content_stages[8142313]
+    rewards = get_event_rewards(stage, data)
+    print(stage['Name'])
+    print (rewards)
+
+if __name__ == '__main__':
+    main()
+
+
