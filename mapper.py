@@ -118,7 +118,8 @@ def main():
     args['data_primary'] = args['data_primary'] == None and '../ba-data/jp' or args['data_primary']
     args['data_secondary'] = args['data_secondary'] == None and '../ba-data/global' or args['data_secondary']
     args['translation'] = args['translation'] == None and '../bluearchivewiki/translation' or args['translation']
-    args['outdir'] = args['outdir'] == None and 'out' or args['outdir']
+    if args['outdir'] == None:
+        args['outdir'] = args['map_type'] == 'events' and 'out/events' or 'out'
     #print(args)
     try:
          mapper(args['map_type'])
