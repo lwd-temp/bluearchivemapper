@@ -38,7 +38,7 @@ def get_enemy_infos(map, data):
 
 def get_start_tiles(strategies):
     for location, strategy in strategies:
-        if strategy['StrategyObjectType'] == 'Start':
+        if strategy['StrategyObjectType'] in ['Start', 'FixedStart01', 'FixedStart02', 'FixedStart03', 'FixedStart04']:
             yield location
 
 
