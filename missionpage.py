@@ -131,7 +131,7 @@ def missionpage(map, data, tls, assets):
             action='edit',
             title=f'Missions/{map}',
             text=text,
-            summary=f'Create mission page for {map}',
+            summary=f'Generated mission page for {map}',
             token=site.token()
         )
 

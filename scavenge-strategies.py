@@ -56,7 +56,7 @@ def scavenge():
         text_parsed = wtp.parse(text['parse']['wikitext'])
         
         for section in text_parsed.sections:
-            if section.title == "Strategy":
+            if str(section.title).strip() == "Strategy":
                 #print(f"Strategy found on page {text['parse']['title']}")
                 wikiguide = section.contents.replace("[[Category:Missions]]", "").strip()
 
