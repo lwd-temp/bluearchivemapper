@@ -598,11 +598,11 @@
     },
     {
       "Name": "19-1H",
-      "Description": "Team A (Blue) on the Top-left,Team B (Yellow,Boss) right\n\nTurn 1:Team A goes top and attacks.Team B goes left.\n\nTurn 2:Team A goes bottom.Team B goes left to the drone.\n\nTurn 3:Team B goes top.Team A goes top=right.\n\nTurn 4:Team A goes right.Team B goes bottom-left\n\nTurn 5:Team A goes bottom and take the gift box.Team B goes bottom and attacks boss."
+      "Description": "Team A (Blue) on the Top-left,Team B (Yellow,Boss) right\n\nTurn 1:Team A goes top and attacks. Team B goes left.\n\nTurn 2:Team A goes bottom. Team B goes left to the drone.\n\nTurn 3:Team B goes top. Team A goes top=right.\n\nTurn 4:Team A goes right. Team B goes bottom-left\n\nTurn 5:Team A goes bottom and take the gift box. Team B goes bottom and attacks boss."
     },
     {
       "Name": "19-2H",
-      "Description": "Team A (Blue) on the left,Team B (Yellow,Boss) right\n\nTurn 1:Team B goes top-left and attack.Team A goes bottom-left and attack.\n\nTurn 2:Team B goes top to the drone.Team A goes right.\n\nTurn 3:Team B swaps with Team A and goes top-right.Team A goes left.\n\nTurn 4:Team A goes bottom.Team B goes left.\n\nTurn 5:Team A goes bottom-right and take gift box. Team B goes left and attack boss."
+      "Description": "Team A (Blue) on the left,Team B (Yellow,Boss) right\n\nTurn 1:Team B goes top-left and attack. Team A goes bottom-right and attack.\n\nTurn 2:Team B goes top to the drone. Team A goes right.\n\nTurn 3:Team B swaps with Team A and goes top-right. Team A goes left.\n\nTurn 4:Team A goes bottom. Team B goes left.\n\nTurn 5:Team A goes bottom-right and take gift box. Team B goes left and attack boss."
     },
     {
       "Name": "19-3H",
@@ -638,6 +638,66 @@
     },
     {
       "Name": "20-3H",
+      "Description": null
+    },
+    {
+      "Name": "21-1",
+      "Description": null
+    },
+    {
+      "Name": "21-2",
+      "Description": null
+    },
+    {
+      "Name": "21-3",
+      "Description": null
+    },
+    {
+      "Name": "21-4",
+      "Description": null
+    },
+    {
+      "Name": "21-5",
+      "Description": null
+    },
+    {
+      "Name": "21-1H",
+      "Description": null
+    },
+    {
+      "Name": "21-2H",
+      "Description": null
+    },
+    {
+      "Name": "21-3H",
+      "Description": null
+    },
+    {
+      "Name": "3-A",
+      "Description": null
+    },
+    {
+      "Name": "6-A",
+      "Description": null
+    },
+    {
+      "Name": "9-A",
+      "Description": null
+    },
+    {
+      "Name": "12-A",
+      "Description": null
+    },
+    {
+      "Name": "15-A",
+      "Description": null
+    },
+    {
+      "Name": "18-A",
+      "Description": null
+    },
+    {
+      "Name": "21-A",
       "Description": null
     }
   ]

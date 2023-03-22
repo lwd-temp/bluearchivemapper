@@ -6,10 +6,13 @@
 | RecLevel = [[ mission.reclevel ]]
 }}
 
+[% if mission.difficulty != 'Extra' -%]
 =Map=
 {{MissionMap
 | Filename = [[ mission.filename ]]
 }}
+
+[% endif -%]
 
 =Drops=
 {{MissionRewards
@@ -34,4 +37,4 @@
 =Strategy=
 [[ mission.strategy ]]
 [% endif %]
-[% raw %][[Category:Missions]][% endraw %]
+[% raw %][[Category:Missions|[% endraw %][[ mission.sortkey ]][% raw %]]][% endraw %]

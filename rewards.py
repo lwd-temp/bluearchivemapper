@@ -60,13 +60,13 @@ def get_gacha_rewards(stage_reward, data):
 def _get_gacha_rewards(group_id, stage_reward_prob, data):
     global ignore_item_id
     if group_id in ignore_item_id: 
-        print(f"Ignoring gacha group {group_id}")
+        #print(f"Ignoring gacha group {group_id}")
         return
 
     gacha_group = data.gacha_groups[group_id]
-    print(f"Getting rewards for group_id {group_id}: {translate_group_name(gacha_group['NameKr'])}")
+    #print(f"Getting rewards for group_id {group_id}: {translate_group_name(gacha_group['NameKr'])}")
     if gacha_group['IsRecursive']:
-        print (f'This is a recursive group')
+        #print (f'This is a recursive group')
         yield from _get_gacha_rewards_recursive(group_id, stage_reward_prob, data)
         return
 
@@ -81,7 +81,7 @@ def _get_gacha_rewards(group_id, stage_reward_prob, data):
             item = data.items[gacha_element['ParcelID']]
 
         name_en = 'NameEn' in data.localization[item['LocalizeEtcId']] and data.localization[item['LocalizeEtcId']]['NameEn'] or None
-        print (f'   {name_en}')
+        #print (f'   {name_en}')
         prob = get_gacha_prob(gacha_element, data) * stage_reward_prob / 100
         amount = gacha_element['ParcelAmountMin'] == gacha_element['ParcelAmountMax'] and gacha_element['ParcelAmountMin'] or f"{gacha_element['ParcelAmountMin']}~{gacha_element['ParcelAmountMax']}"
 
@@ -91,7 +91,7 @@ def _get_gacha_rewards(group_id, stage_reward_prob, data):
 
 def _get_gacha_rewards_recursive(group_id, stage_reward_prob, data):
     for gacha_element in data.gacha_elements_recursive[group_id]:
-        print (f"Getting reward group {gacha_element['ParcelID']} for recursive element {gacha_element}")
+        #print (f"Getting reward group {gacha_element['ParcelID']} for recursive element {gacha_element}")
         yield from _get_gacha_rewards(gacha_element['ParcelID'], stage_reward_prob, data)
 
 
@@ -130,7 +130,7 @@ def _get_rewards(campaign_stage, data):
     rewards = data.campaign_stage_rewards[campaign_stage['CampaignStageRewardId']]
     for reward in rewards:
         reward_type = reward['StageRewardParcelType']
-        print (reward_type)
+        #print (reward_type)
         try:
             yield from _REWARD_TYPES[reward_type](reward, data)
         except KeyError:

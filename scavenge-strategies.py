@@ -54,25 +54,26 @@ def scavenge():
         print (text['parse']['title'])
         stage_code = text['parse']['title'].replace("Missions/", "")
         text_parsed = wtp.parse(text['parse']['wikitext'])
+
+        if stage_code not in strategy_list:
+            print(f"New mission {stage_code} added")
+            strategy_list[stage_code] = {'Name':stage_code, 'Description':None}
         
         for section in text_parsed.sections:
             if str(section.title).strip() == "Strategy":
                 #print(f"Strategy found on page {text['parse']['title']}")
-                wikiguide = section.contents.replace("[[Category:Missions]]", "").strip()
+                wikiguide = section.contents[:section.contents.rfind("[[Category:Missions")].strip()
 
-                if stage_code in strategy_list:
-                    if strategy_list[stage_code]['Description'] == None:
-                        print (f"Added guide for mission {stage_code}")
-                        strategy_list[stage_code]['Description'] = wikiguide
-                    elif strategy_list[stage_code]['Description'] == wikiguide:
-                        print(f"Matching guides found for {stage_code}")
-                        continue
-                    else:
-                        print (f"Conflicting strategy text added as Description_fromwiki for {stage_code}")
-                        strategy_list[stage_code]['Description_fromwiki'] = wikiguide
+                if strategy_list[stage_code]['Description'] == None:
+                    print (f"Added guide for mission {stage_code}")
+                    strategy_list[stage_code]['Description'] = wikiguide
+                elif strategy_list[stage_code]['Description'] == wikiguide:
+                    print(f"Matching guides found for {stage_code}")
+                    continue
                 else:
-                    print(f"New mission {stage_code} added")
-                    strategy_list[stage_code] = {'Name':stage_code, 'Description':wikiguide}
+                    print (f"Conflicting strategy text added as Description_fromwiki for {stage_code}")
+                    strategy_list[stage_code]['Description_fromwiki'] = wikiguide
+
 
 
     
