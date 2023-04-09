@@ -71,38 +71,37 @@ def get_two_way_portals(strategies):
                 portals[strategy['PortalId']] = location
 
 
-def _get_switches(strategies, toggle_prefab_names, switch_object_type):
-    toggles, switches = {}, {}
+def get_toggles(strategies, toggle_prefab_names = ['SingleSwitchObject_01_UP', 'SingleSwitchObject_02_UP', 'SingleSwitchObject_03_UP', 'SingleSwitchObject_01_Down', 'SingleSwitchObject_02_Down', 'SingleSwitchObject_03_Down']):
     for location, strategy in strategies:
         if strategy['StrategyObjectType'] == 'SwitchToggle' and strategy['PrefabName'] in toggle_prefab_names:
             try:
-                yield location, switches[strategy['SwithId']]
+                yield location, strategy['PrefabName'].rsplit('_')[-1], strategy['SwithId']
             except KeyError:
                 pass
 
-            toggles[strategy['SwithId']] = location
-        elif strategy['StrategyObjectType'] == switch_object_type:
+
+def _get_switches(strategies, switch_object_type, switch_id):
+    for location, strategy in strategies:
+        if strategy['StrategyObjectType'] == switch_object_type and strategy['SwithId'] == switch_id:
             try:
-                yield toggles[strategy['SwithId']], location
+                yield location
             except KeyError:
                 pass
 
-            switches[strategy['SwithId']] = location
 
-
-def get_down_switches(strategies):
+def get_down_switches(strategies, switch_id):
     return _get_switches(
         strategies,
-        ['SingleSwitchObject_01_Down', 'SingleSwitchObject_02_Down', 'SingleSwitchObject_03_Down'],
-        'SwitchMovableWhenToggleOff'
+        'SwitchMovableWhenToggleOff',
+        switch_id
     )
 
 
-def get_up_switches(strategies):
+def get_up_switches(strategies, switch_id):
     return _get_switches(
         strategies,
-        ['SingleSwitchObject_01_UP', 'SingleSwitchObject_02_UP', 'SingleSwitchObject_03_UP'],
-        'SwitchMovableWhenToggleOn'
+        'SwitchMovableWhenToggleOn',
+        switch_id
     )
 
 
@@ -182,12 +181,16 @@ def get_tiles(map, data):
         yield trigger, SpawnTriggerTile(overlay=[Marker(number)])
         yield spawn, SpawnTile(overlay=[Marker(number)])
 
-    for toggle, switch in get_down_switches(strategies):
+    for toggle_location, toggle_type, switch_id in get_toggles(strategies):
         number += 1
-        yield toggle, ToggleDownTile(overlay=[Marker(number), bonus_infos.get(toggle) or enemy_infos.get(toggle)])
-        yield switch, SwitchDownTile(overlay=[Marker(number), bonus_infos.get(switch) or enemy_infos.get(switch)])
 
-    for toggle, switch in get_up_switches(strategies):
-        number += 1
-        yield toggle, ToggleUpTile(overlay=[Marker(number), bonus_infos.get(toggle) or enemy_infos.get(toggle)])
-        yield switch, SwitchUpTile(overlay=[Marker(number), bonus_infos.get(switch) or enemy_infos.get(switch)])
+        match toggle_type:
+            case 'UP':
+                yield toggle_location, ToggleUpTile(overlay=[Marker(number), bonus_infos.get(toggle_location) or enemy_infos.get(toggle_location)])
+            case 'Down':
+                yield toggle_location, ToggleDownTile(overlay=[Marker(number), bonus_infos.get(toggle_location) or enemy_infos.get(toggle_location)])
+       
+        for switch in get_down_switches(strategies, switch_id):
+            yield switch, SwitchDownTile(overlay=[Marker(number), bonus_infos.get(switch) or enemy_infos.get(switch)])    
+        for switch in get_up_switches(strategies, switch_id):
+            yield switch, SwitchUpTile(overlay=[Marker(number), bonus_infos.get(switch) or enemy_infos.get(switch)])    
