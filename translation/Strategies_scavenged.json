@@ -282,7 +282,8 @@
     },
     {
       "Name": "9-2H",
-      "Description": "Bossing team top, clearing team bottom\n\nAttack the enemy below your bossing team and move your clearing team up\n\nUse your clearing team to attack the enemy above then move your bossing team right to (2)\n\nUse your clearing team to attack the enemy to the right  then attack the enemy above your bossing team\n\nMove your clearing team to (1), swap places with your bossing team and attack the boss for a 4-turn clear"
+      "Description": "Bossing team top, clearing team bottom\n\nAttack the enemy below your bossing team and move your clearing team up\n\nUse your clearing team to attack the enemy above then move your bossing team right to (2)\n\nUse your clearing team to attack the enemy to the right  then attack the enemy above your bossing team\n\nMove your clearing team to (1), swap places with your bossing team and attack the boss for a 4-turn clear",
+      "Description_fromwiki": "Note: To complete the \"Acquire S-rank 5 times\" objective, you will need at least 4 turns, meaning that it cannot be completed in the same run as the \"Complete the mission within 3 turns\" challenge.\n\nBossing team top, clearing team bottom.\n\nAttack the enemy below your bossing team and move your clearing team up.\n\nUse your clearing team to attack the enemy above then move your bossing team right to (2).\n\nUse your clearing team to attack the enemy to the right. \n\nChoose your next steps based on your goal:\n\n'''A. To complete the \"Acquire S-rank 5 times\" objective (within 4 turns):''' \n\nAttack the enemy above your bossing team, then move your clearing team to (1).\n\nSwap places with your bossing team and attack the boss for a 4-turn clear.\n\n'''B. To complete the \"Complete the mission within 3 turns\" challenge:''' \n\nMove your bossing team right to (1). The boss will attack you on their turn for a 3-turn clear."
     },
     {
       "Name": "9-3H",
@@ -350,7 +351,8 @@
     },
     {
       "Name": "11-3H",
-      "Description": "Bossing team left, Clearing team right\n\nMove clearing team down and end turn\n\nUse the teleporter above you with your bossing team and move your clearing team to the right. Don't use the teleporter with your clearing team.\n\nMove your bossing team right and attack the enemy above you with your clearing team\n\nKill the boss for a 4-turn clear"
+      "Description": "Bossing team left, Clearing team right\n\nMove clearing team down and end turn\n\nUse the teleporter above you with your bossing team and move your clearing team to the right. Don't use the teleporter with your clearing team.\n\nMove your bossing team right and attack the enemy above you with your clearing team\n\nKill the boss for a 4-turn clear",
+      "Description_fromwiki": "Bossing team left, Clearing team right\n\nMove clearing team down and bossing team up. Use the teleporter.\n\nMove your clearing team to the right. Don't use the teleporter with your clearing team.\n\nMove your bossing team right and attack the enemy above you with your clearing team\n\nKill the boss for a 3-turn clear"
     },
     {
       "Name": "12-1",
@@ -382,7 +384,8 @@
     },
     {
       "Name": "12-3H",
-      "Description": "Clearing team on top, Bossing team on bottom\n\nAttack the enemy in sight with your Clearing team then swap places with your Bossing team and use the teleporter\n\nGrab the giftbox then move to (4) with your Bossing team\n\nMove bossing team to (1) and move your Clearing team one spot down\n\nUse the teleporter with your Bossing team and move your Clearing team one spot to the left\n\nMove your Clearing team one spot below to (3) and attack the enemy to your left with your Bossing team\n\nAttack the enemy to your right with your Clearing team and kill the boss with your Bossing team for a 6-turn clear"
+      "Description": "Clearing team on top, Bossing team on bottom\n\nAttack the enemy in sight with your Clearing team then swap places with your Bossing team and use the teleporter\n\nGrab the giftbox then move to (4) with your Bossing team\n\nMove bossing team to (1) and move your Clearing team one spot down\n\nUse the teleporter with your Bossing team and move your Clearing team one spot to the left\n\nMove your Clearing team one spot below to (3) and attack the enemy to your left with your Bossing team\n\nAttack the enemy to your right with your Clearing team and kill the boss with your Bossing team for a 6-turn clear",
+      "Description_fromwiki": "Clearing team on top, Bossing team on bottom\n\nAttack the enemy in sight with your Clearing team then swap places with your Bossing team and use the teleporter\n\nGrab the giftbox then move to (4) with your Bossing team\n\nMove bossing team to (1) and move your Clearing team one spot down\n\nUse the teleporter with your Bossing team and move your Clearing team one spot to the left\n\nMove your Clearing team one spot below to (3) and attack the enemy to your left with your Bossing team\n\nAttack the enemy to your right with your Clearing team and kill the boss with your Bossing team for a 6-turn clear\n\n(Skip the giftbox and go directly to (4) on turn 2 for a 5-turn clear)"
     },
     {
       "Name": "13-1",
@@ -406,7 +409,8 @@
     },
     {
       "Name": "13-1H",
-      "Description": "Bossing Team on top, Clearing Team on bottom\n\nMove Clearing Team to the left and Bossing Team to (1)\n\nMove Clearing Team to (2) and swap places with Bossing Team then attack the enemy directly below you\n\nMove Clearing Team to the right and Bossing Team to the left\n\nGrab the giftbox and then Kill the boss for a 4-turn clear"
+      "Description": "Bossing Team on top, Clearing Team on bottom\n\nMove Clearing Team to the left and Bossing Team to (1)\n\nMove Clearing Team to (2) and swap places with Bossing Team then attack the enemy directly below you\n\nMove Clearing Team to the right and Bossing Team to the left\n\nGrab the giftbox and then Kill the boss for a 4-turn clear",
+      "Description_fromwiki": "Bossing Team on top, Clearing Team on bottom\n\nMove Clearing Team to the left and Bossing Team to the cracked cell on top\n\nMove Clearing Team to cracked cell on bottom and swap places with Bossing Team then attack the enemy directly below you\n\nMove Clearing Team to the right and Bossing Team to the left\n\nGrab the giftbox and then Kill the boss for a 4-turn clear"
     },
     {
       "Name": "13-2H",
@@ -442,7 +446,8 @@
     },
     {
       "Name": "14-2H",
-      "Description": "Bossing team to the right, Clearing team to the left.\n\nMove clearing above and attack enemy below with bossing.\n\nMove bossing left first and swap with clearing team, attacking the enemy above.\n\nMove clearing to (1), move bossing left.\n\nGrab gift box and attack boss for a 4 turn clear."
+      "Description": "Bossing team to the right, Clearing team to the left.\n\nMove clearing above and attack enemy below with bossing.\n\nMove bossing left first and swap with clearing team, attacking the enemy above.\n\nMove clearing to (1), move bossing left.\n\nGrab gift box and attack boss for a 4 turn clear.",
+      "Description_fromwiki": "Bossing team to the right, Clearing team to the left.\n\nAttack enemy below with bossing. Move clearing team above.\n\nMove bossing left first and swap with clearing team, attacking the enemy above.\n\nMove clearing to (1), move bossing left.\n\nGrab gift box and attack boss for a 4 turn clear."
     },
     {
       "Name": "14-3H",
@@ -566,11 +571,11 @@
     },
     {
       "Name": "18-1H",
-      "Description": null
+      "Description": "Team A (Red) on the left and Team B (Blue, Boss) right\n\nTurn 1: Team B goes bottom-left and attacks. Team A goes bottom-right and attack.\n\nTurn 2: Team B goes bottom-right. Team A goes bottom-right.\n\nTurn 3: Team B goes bottom-right. Team A goes bottom-right and uses teleporter.\n\nTurn 4: Team A goes right. Team B goes bottom-right.\n\nTurn 5: Team A goes right and takes gift box. Team B goes right and attacks boss."
     },
     {
       "Name": "18-2H",
-      "Description": null
+      "Description": "Team A (Red) on the left and Team B (Blue, Boss) right\n\nTurn 1: Team B goes left and teleports. Team A goes bottom-right and attacks.\n\nTurn 2: Team B goes bottom-right. Team A goes bottom-right and teleports.\n\nTurn 3: Team B goes bottom-right and does not teleport. Team A goes top-left.\n\nTurn 4: Team A goes top-left. Team B teleports and goes right.\n\nTurn 5: Team A goes top-left and takes gift box. Team B goes right and attacks boss."
     },
     {
       "Name": "18-3H",
@@ -630,15 +635,15 @@
     },
     {
       "Name": "20-1H",
-      "Description": null
+      "Description": "Team A (Red, Boss) on the left and Team B (Yellow) right\n\nTurn 1: Team B goes top-right. Team A goes bottom-right.\n\nTurn 2: Team B goes top-right. Team A goes right.\n\nTurn 3: Team B doesn't move. Team A goes top-right.\n\nTurn 4: Team A goes top-left. Team B goes left.\n\nTurn 5: Team B goes top-left and takes gift box. Team A goes top-left and attacks boss."
     },
     {
       "Name": "20-2H",
-      "Description": null
+      "Description": "Team A (Red, Boss) on the left, Team B (Yellow) on the right.\n\nTurn 1: Team A goes right. Team B goes bottom.\n\nTurn 2: Team A goes right. Team B goes bottom-left.\n\nTurn 3: Team B goes left. Team A swaps with Team B and goes top.\n\nTurn 4: Team B goes bottom. Team A goes top and attack. \n\nTurn 5: Team B goes bottom-left and takes the gift box. Team A top and attack Boss."
     },
     {
       "Name": "20-3H",
-      "Description": null
+      "Description": "Team A (Red) on the bottom-left, Team B (Red, Boss) bottom-right, Team C (Yellow) top.\n\nTurn 1: Team A goes top-left. Team B goes top-left. Team C goes right.\n\nTurn 2: Team A goes top-left. Team B goes top-right. Team C goes right.\n\nTurn 3: Team A goes left. Team C goes right. Team B swaps with team C and goes right.\n\nTurn 4: Team A goes top-left. Team B goes bottom-right. Team C goes bottom-left.\n\nTurn 5: Team A goes top-left. Team C goes bottom-right and grabs gift. Team B goes bottom-left and attacks boss."
     },
     {
       "Name": "21-1",
@@ -698,6 +703,70 @@
     },
     {
       "Name": "21-A",
+      "Description": null
+    },
+    {
+      "Name": "22-1",
+      "Description": null
+    },
+    {
+      "Name": "22-2",
+      "Description": null
+    },
+    {
+      "Name": "22-3",
+      "Description": null
+    },
+    {
+      "Name": "22-4",
+      "Description": null
+    },
+    {
+      "Name": "22-5",
+      "Description": null
+    },
+    {
+      "Name": "22-1H",
+      "Description": null
+    },
+    {
+      "Name": "22-2H",
+      "Description": null
+    },
+    {
+      "Name": "22-3H",
+      "Description": null
+    },
+    {
+      "Name": "23-1",
+      "Description": null
+    },
+    {
+      "Name": "23-2",
+      "Description": null
+    },
+    {
+      "Name": "23-3",
+      "Description": null
+    },
+    {
+      "Name": "23-4",
+      "Description": null
+    },
+    {
+      "Name": "23-5",
+      "Description": null
+    },
+    {
+      "Name": "23-1H",
+      "Description": null
+    },
+    {
+      "Name": "23-2H",
+      "Description": null
+    },
+    {
+      "Name": "23-3H",
       "Description": null
     }
   ]
