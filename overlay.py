@@ -43,7 +43,8 @@ class EnemyInfo(Overlay):
             'Normal': 'attack_normal',
             'Explosion': 'attack_explosive',
             'Pierce': 'attack_penetration',
-            'Mystic': 'attack_mystic'
+            'Mystic': 'attack_mystic',
+            'Sonic': 'attack_sonic'
         }[self.attack_type]
         asset = assets[assetname]
         im.alpha_composite(asset, (x + 32, y))
@@ -52,7 +53,8 @@ class EnemyInfo(Overlay):
         assetname = {
             'LightArmor': 'armor_light',
             'HeavyArmor': 'armor_heavy',
-            'Unarmed': 'armor_special'
+            'Unarmed': 'armor_special',
+            'ElasticArmor': 'armor_elastic'
         }[self.armor_type]
         asset = assets[assetname]
         im.alpha_composite(asset, (x + (14 if offset else 32), y + 65))

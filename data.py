@@ -5,9 +5,10 @@ import json
 
 BlueArchiveData = collections.namedtuple(
     'BlueArchiveData',
-    ['campaign_stages', 'campaign_stage_rewards', 'campaign_strategy_objects', 'campaign_units', 'characters',
+    ['campaign_stages', 'campaign_stage_rewards', 'campaign_strategy_objects', 'campaign_units', 'characters', 'costumes', 'costume_by_prefab', 'ground',
      'currencies', 'equipment', 'event_content_stages', 'event_content_stage_rewards', 'gacha_elements', 'gacha_elements_recursive', 'gacha_groups',
-     'items', 'localization']
+     'items', 'localization', 'stages',
+     ]
 )
 BlueArchiveTranslations = collections.namedtuple(
     'BlueArchiveTranslations',
@@ -31,9 +32,16 @@ def load_campaign_units(path):
     return load_file(os.path.join(path, 'Excel', 'CampaignUnitExcelTable.json'))
 
 
-def load_characters(path):
+# def load_characters(path):
+#     # TODO: find something better to use as the key
+#     return load_file(os.path.join(path, 'Excel', 'CharacterExcelTable.json'),
+#                      key='ModelPrefabName',
+#                      pred=lambda item: item['ProductionStep'] == 'Release')
+
+
+def load_costume_by_prefab(path):
     # TODO: find something better to use as the key
-    return load_file(os.path.join(path, 'Excel', 'CharacterExcelTable.json'),
+    return load_file(os.path.join(path, 'Excel', 'CostumeExcelTable.json'),
                      key='ModelPrefabName',
                      pred=lambda item: item['ProductionStep'] == 'Release')
 
@@ -48,7 +56,10 @@ def load_data(path_primary, path_secondary, path_translation):
         campaign_stage_rewards=load_campaign_stage_rewards(path_primary),
         campaign_strategy_objects=load_campaign_strategy_objects(path_primary),
         campaign_units=load_campaign_units(path_primary),
-        characters=load_characters(path_primary),
+        characters= load_generic(path_primary, 'CharacterExcelTable.json'), #characters=load_characters(path_primary),
+        costumes= load_generic(path_primary, 'CostumeExcelTable.json', key='CostumeGroupId'),
+        costume_by_prefab = load_costume_by_prefab(path_primary),
+        ground = load_generic(path_primary, 'GroundExcelTable.json'),
         currencies=load_currencies(path_primary),
         event_content_stages=load_event_content_stages(path_primary),
         event_content_stage_rewards=load_event_content_stage_rewards(path_primary),
@@ -58,11 +69,15 @@ def load_data(path_primary, path_secondary, path_translation):
         items=load_items(path_primary),
         equipment=load_equipment(path_primary),
         localization=load_localization(path_primary, path_secondary, path_translation),
+        stages=None, #load_stages(path_primary),
     )
 
 
 #def load_data(path):
 #    return _load_data(pathlib.Path(path))
+
+def load_generic(path, filename, key='Id'):
+    return load_file(os.path.join(path, 'Excel', filename), key)
 
 
 def load_equipment(path):
@@ -151,3 +166,16 @@ def load_localization(path_primary, path_secondary, translation):
             continue
     
     return data_primary
+
+
+def load_stages(path_primary):
+    data = {}
+    
+    for file in os.listdir(path_primary + '/Stage/'):
+        if not file.endswith('.json'):
+            continue
+        
+        with open(os.path.join(path_primary, 'Stage', file), encoding="utf8") as f:
+            data[file[:file.index('.')]] = json.load(f)
+
+    return data

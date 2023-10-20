@@ -25,7 +25,23 @@ def get_bonus_infos(strategies):
 def get_enemy_infos(map, data):
     for unit in map['hexaUnitList']:
         campaign_unit = data.campaign_units[unit['Id']]
-        character = data.characters[campaign_unit['PrefabName']]
+
+        # ground = data.ground[campaign_unit['Id']]
+        # print(f"StageFileName {ground['StageFileName']}")
+        # stagefile = data.stages[ground['StageFileName'][0].lower()]
+
+        # for template in json_find_key(stagefile, 'SpawnTemplateId'):
+        #     print(template)
+            # if template != '' and template in devname_characters and template not in spawn_templates:
+            #     spawn_templates[template] = devname_characters[template]     
+
+        #NOTE TO SELF
+        #going through spawn templates in actual stage file seems to be the proper way to get ACTUAL character info
+        #currently data is linked in a way that can break because PrefabName is shared across several versions of the unit
+
+        costume = data.costume_by_prefab[campaign_unit['PrefabName']]
+        character = data.characters[costume['CostumeGroupId']]
+
         location = unit['Location']['x'], unit['Location']['y'], unit['Location']['z']
         yield location, EnemyInfo(
             campaign_unit['AIMoveType'],
@@ -194,3 +210,15 @@ def get_tiles(map, data):
             yield switch, SwitchDownTile(overlay=[Marker(number), bonus_infos.get(switch) or enemy_infos.get(switch)])    
         for switch in get_up_switches(strategies, switch_id):
             yield switch, SwitchUpTile(overlay=[Marker(number), bonus_infos.get(switch) or enemy_infos.get(switch)])    
+
+
+# def json_find_key(json_input, lookup_key):
+#     if isinstance(json_input, dict):
+#         for k, v in json_input.items():
+#             if k == lookup_key:
+#                 yield v
+#             else:
+#                 yield from json_find_key(v, lookup_key)
+#     elif isinstance(json_input, list):
+#         for item in json_input:
+#             yield from json_find_key(item, lookup_key)
