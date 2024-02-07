@@ -48,7 +48,7 @@ def get_enemy_infos(map, data):
             campaign_unit['Grade'],
             character['BulletType'],
             character['ArmorType'],
-            campaign_unit['IsBoss']
+            campaign_unit['Grade'] == 'Boss'
         )
 
 

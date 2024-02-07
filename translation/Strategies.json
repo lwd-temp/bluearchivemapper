@@ -94,7 +94,7 @@
     },
     {
       "Name": "3-3H",
-      "Description": null
+      "Description": "* Setup: Use a mix of Explosive/Piercing units in your Team.\n* Turn 1: Move Team right.\n* Turn 2: Move Team down.\n* Turn 3: Move Team down-right.\n** (Team will be attacked by pursuing enemy to the left, and by enemy below.)\n* Turn 4: Move Team right.\n* Turn 5: Move Team right.\n** (Team will be attacked by boss for a 5-turn clear.)"
     },
     {
       "Name": "4-1",
@@ -210,15 +210,15 @@
     },
     {
       "Name": "7-5",
-      "Description": null
+      "Description": "* Setup\n** Boss Team left (3 battles, Explosive/Piercing)\n** Sweep Team right (2 battles, Explosive)\n\n* Turn 1\n** Move Boss Team down and teleport. \n** Move Sweep Team down.\n** (Boss Team will be attacked by enemy above.)\n\n* Turn 2\n** Attack enemy below Sweep Team. \n** Teleport Boss Team back, swap Boss Team with Sweep Team, then move Boss Team down and teleport.\n** (Boss Team will be attacked by enemy below.) \n\n* Turn 3\n** Teleport Sweep Team and attack enemy to the left. \n** Defeat the boss with Boss Team for a 3-turn clear."
     },
     {
       "Name": "7-1H",
-      "Description": null
+      "Description": "* Setup\n** Boss Team top (2 battles, Explosive)\n** Sweep Team bottom (2 battle, Explosive)\n\n* Turn 1\n** Move Boss Team to tile (1), and use the teleporter.\n** Move Sweep Team left.\n\n* Turn 2\n** Attack enemy to the left of Boss Team.\n** Move Sweep Team to tile (1), and use the teleporter.\n** (Sweep Team will be attacked by Enemy to the upper-left.)\n\n* Turn 3\n** Attack enemy above with Sweep Team.\n** Defeat Boss with Boss Team for a 3-turn clear."
     },
     {
       "Name": "7-2H",
-      "Description": null
+      "Description": "* Setup\n** Sweep Team on the left. (2 battles, Explosive)\n** Boss Team on the right. (3 battles, Explosive)\n\n* Turn 1\n** Attack enemy below Sweep Team.\n** Swap Boss Team with Sweep Team, then move Boss Team to tile (1) and use the teleporter. \n** (Boss Team will be attacked by Enemy to left.)\n\n* Turn 2\n** Attack enemy to the right of Sweep Team.\n** Make Boss Team wait.\n\n* Turn 3\n** Grab the giftbox to the right of Sweep Team.\n** Move Boss Team to the upper right.\n** (Boss Team will be attacked by the boss. Defeat the boss with Boss Team for a 3-turn clear.)"
     },
     {
       "Name": "7-3H",
@@ -230,11 +230,11 @@
     },
     {
       "Name": "8-2",
-      "Description": "Boss-killer team right, sweep team left (4 Turns)\n\nTeleport sweep team to left side (1), kill enemy on top of bk team\n\nClear enemy using sweep team, bk team move to right corner\n\nMove sweep team to tile(2), bk team move to right\n\nClear enemy nearby sweep team, kill boss using bk team"
+      "Description": "* Setup\n** Sweep Team left (Piercing)\n** Boss Team right (Piercing)\n\n* Turn 1\n** Move Sweep Team up to tile (1) and teleport.\n** Attack enemy above Boss Team.\n\n* Turn 2\n** Attack enemy above Sweep Team.\n** Move Boss Team up.\n\n* Turn 3\n** Move Sweep Team right to tile (2).\n** Move Boss Team right.\n\n* Turn 4\n** Attack enemy above Sweep Team.\n** Defeat boss with Boss Team for a 4-turn clear.\n\n----\n'''320 second challenge'''\n* Don't attack with Sweep Team on turn 4.\n* Try to clear each battle in under 105 seconds."
     },
     {
       "Name": "8-3",
-      "Description": "Boss-killer team left, sweep team right (3 Turns)\n\nbk team kill enemy at bottom, sweep team move to right\n\nTeleport bk team to top side (1), swap sweep team with bk team, move sweep team to tile(2)\n\nkill enemy on the right side of bk team, kill enemy on the right side of sweep team, end phases"
+      "Description": "* Setup: Boss Team left, Sweep Team right\n* Turn 1: \n** Attack enemy below Boss Team.\n** Move Sweep Team to the right. ￼\n* Turn 2:\n** Move Boss Team down and teleport.\n** Swap Sweep Team with Boss Team.\n** Move Sweep Team up to tile (2).\n* Turn 3: ￼\n** Attack enemy right of Boss Team and Sweep Team.\n** (Boss Team will be attacked by the boss below.)\n** Defeat the boss with Boss Team for a 3-turn clear."
     },
     {
       "Name": "8-4",
@@ -242,7 +242,7 @@
     },
     {
       "Name": "8-5",
-      "Description": null
+      "Description": "* Setup\n** Boss Team at the bottom (3 battles, Piercing)\n** Sweep Team at the top (2 battles, Explosive/Piercing)\n\n* Turn 1\n** Move Sweep Team to the bottom-right and attack enemy.\n** Swap Boss Team with Sweep Team, then move Boss Team to the right.\n** (Don't teleport Boss Team afterward.)\n\n* Turn 2\n** Move Sweep Team to the bottom-left and teleport.\n** Attack enemy to the right of Boss Team.\n\n* Turn 3\n** Move Sweep Team to the right and activate tile (3).\n** Move Boss Team to the right.\n* Turn 4\n** Move Sweep Team to the right and teleport back.\n** Attack enemy to the bottom-right of Boss Team.\n* Turn 5\n** Attack enemy to the top-right of Sweep Team.\n** Attack the boss with Boss Team."
     },
     {
       "Name": "8-1H",
@@ -258,7 +258,7 @@
     },
     {
       "Name": "9-1",
-      "Description": null
+      "Description": "* Setup\n** Boss Team left (2 battles, Explosive) \n** Sweep Team right (2 battles, Piercing)\n\n* Turn 1\n** Move Sweep Team left.\n** Attack enemy below Boss Team.\n\n* Turn 2\n** Attack enemy below Sweep Team.\n** Move Boss Team down.\n** (Sweep Team will be teleported to right Start position.)\n\n* Turn 3\n** Attack enemy above Sweep Team.\n** Defeat boss with Boss Team for 3-turn clear."
     },
     {
       "Name": "9-2",
@@ -286,27 +286,27 @@
     },
     {
       "Name": "9-3H",
-      "Description": "Bossing team Bottom, Clearing team top.\n\nAttack the enemy below your clearing team then swap places with your bossing team and use that team to attack the enemy now to your left.\n\nUse your clearing team to attack the enemy next to it and move your bossing team one spot down\n\nUse your clearing team to grab the giftbox above it then move your bossing team one spot left to (1). The boss will attack you for a 3-turn clear."
+      "Description": "* Setup\n** Sweep Team top (2 battles, Piercing)\n** Boss Team bottom (3 battles, Explosive)\n\n* Turn 1\n** Attack enemy below Sweep Team.\n** Swap Boss Team with Sweep Team, and attack enemy left of Boss Team.\n\n* Turn 2\n** Attack enemy next to Sweep Team.\n** Move Boss team down.\n** (Boss Team will be attacked by enemy below.)\n\n* Turn 3\n** Move Sweep Team up to get gift box.\n** Move Boss Team left.\n** (Boss Team will be attacked by Boss for a 3-turn clear.)\n\n----\n\n'''240 second challenge:'''\n* Setup: Explosive Team on top Start position. (3 battles, try to clear each in under 80 seconds)\n* Turn 1: Move left.\n* Turn 2: Attack enemy down-left.\n* Turn 3: Move down. (Enemy below will attack)\n* Turn 4: Move left. (Boss will attack)"
     },
     {
       "Name": "10-1",
-      "Description": null
+      "Description": "* Setup\n** Sweep Team left. (1 battle, Mystic)\n** Boss Team right. (3 battles, Explosive)\n\n* Turn 1\n** Move Sweep Team down.\n** Attack enemy below Boss Team.\n\n* Turn 2\n** Move Boss Team down.\n** Move Sweep Team up-left.\n** (Boss Team will be attacked by enemy below.)\n\n* Turn 3\n** Attack enemy above Sweep Team.\n** Defeat the boss with Boss Team for a 3-turn clear."
     },
     {
       "Name": "10-2",
-      "Description": null
+      "Description": "* Setup\n** Sweep Team left. (1 battle, Mystic)\n** Boss Team right. (3 battles, Explosive)\n\n* Turn 1\n** Attack enemy above Boss Team.\n** Swap the positions of Sweep and Boss Team. \n** Move Sweep Team up-right.\n\n* Turn 2\n** Move Sweep Team right, unlocking 2.\n** Move Boss Team left.\n** (Boss Team and Sweep Team will both be attacked by enemy above)\n\n* Turn 3\n** Defeat the boss with Boss Team for a 3-turn clear."
     },
     {
       "Name": "10-3",
-      "Description": null
+      "Description": "* Setup\n** Sweep Team left. (1 battle, Mystic)\n** Boss Team right. (3 battles, Explosive)\n\n* Turn 1\n** Move Boss Team down.\n** Swap the positions of Sweep and Boss Team. \n** Attack the enemy below Sweep Team.\n** (Boss Team will be attacked by enemy below)\n\n* Turn 2\n** Move Sweep Team down-left, unlocking 2.\n** Move Boss Team left.\n** (Boss Team will be attacked by enemy above)\n\n* Turn 3\n** Defeat the boss with Boss Team for a 3-turn clear."
     },
     {
       "Name": "10-4",
-      "Description": null
+      "Description": "* Setup\n** Boss team up. (4 battles, 3 Explosive + 1 Mystic)\n** Sweep team down. (1 battle, Mystic)\n* Turn 1\n** Boss team right.\n** Sweep team up.\n* Enemy Turn 1\n** The special armored enemy will attack boss team.\n* Turn 2\n** Boss team right.\n** Sweep team down-right to ①, getting rid of pursuing enemy at bottom-right.\n* Turn 3\n** Sweep team down-left.\n** Boss team right.\n* Turn 4\n** Sweep team right.\n** Boss team right.\n* Enemy Turn 4\n** The boss will attack the boss team, defeat them for a 4-round clear."
     },
     {
       "Name": "10-5",
-      "Description": null
+      "Description": "* Setup\n** Sweep Team top-left. (2 battles, Mystic)\n** Boss Team bottom-right. (3 battles, Explosive)\n\n* Turn 1\n** Attack the enemy above Boss Team.\n** Swap the positions of Sweep and Boss Team. \n** Move Sweep Team up.\n** (the enemy originating from the top-left can be ignored)\n\n* Turn 2\n** Move Sweep Team right, unlocking 2.\n** Move Boss Team down.\n\n* Turn 3\n** Attack the bottom enemy with Boss Team.\n** Move Sweep Team right. \n** (Sweep Team will be attacked by the top-right enemy)\n\n* Turn 4\n** Move Sweep Team down, unlocking 3.\n** Move Boss Team right, onto 3.\n** (both Sweep Team and Boss Team will get attacked, finishing with a 4-turn clear)"
     },
     {
       "Name": "10-1H",
@@ -322,11 +322,11 @@
     },
     {
       "Name": "11-1",
-      "Description": null
+      "Description": "* Setup\n** Boss Team left. (3 battles, Piercing)\n** Sweep Team right. (1 battle, Mystic)\n\n* Turn 1\n** Move Sweep Team down-right and teleport.\n** Attack enemy above Boss Team.\n** (Boss Team will be attacked by enemy above.)\n\n* Turn 2\n** Move Sweep Team up-right.\n** (Enemy in middle will be despawned by disappearing tile.)\n** Move Boss Team up.\n\n* Turn 3\n** Attack enemy left of Sweep Team.\n** Defeat the boss with Boss Team for a 3-turn clear.\n\n----\n'''240 Second Challenge'''\n* Don't attack with Sweep Team on Turn 3.\n* Try to finish each battle in under 80 seconds."
     },
     {
       "Name": "11-2",
-      "Description": null
+      "Description": "* Setup\n** Sweep Team right. (1 or 2 battle(s), Mystic)\n** Boss Team left. (3 battles, Piercing)\n* The map is pretty straightforward. Note that the enemy on top of 2 can be removed if the Sweep Team is too weak to defeat it. Fighting the mystic enemy on the right alone is sufficient in getting 4 S ranks."
     },
     {
       "Name": "11-3",
@@ -334,11 +334,11 @@
     },
     {
       "Name": "11-4",
-      "Description": null
+      "Description": "* Setup\n** Boss Team top. (3 battles, Piercing)\n** Sweep Team bottom. (2 battles, Mystic)\n\n* Turn 1\n** Attack enemy left of Boss Team.\n** Move Sweep Team to the Left, swapping with Boss Team.\n** Move Sweep Team onto 1, but do not teleport.  \n\n* Turn 2\n** Teleport Sweep Team with 1 and then move down onto 2, disconnecting the bottom mystic enemy from the rest of the map.\n** Move Boss Team to the left.\n\n* Turn 3\n** Attack enemy left of Sweep Team.\n** Move Boss Team to the left and teleport with 1.\n\n* Turn 4\n** Move Boss Team to the bottom-left, swapping with Sweep Team.\n** Attack the enemy on the bottom-left with Boss Team.\n** Attack the enemy on the left with Sweep Team.\n** (the boss will attack Boss Team for a 4-turn clear)"
     },
     {
       "Name": "11-5",
-      "Description": null
+      "Description": "== 3-star clear ==\nThis strategy might be more difficult to pull off without a strong team of both Mystic and Piercing characters..\n\n* Setup\n** Boss Team left. (4 battles, Mystic/Piercing)\n** Sweep Team right. (1 battle, Piercing)\n\n* Turn 1\n** Move Sweep Team up and teleport.\n** Swap Boss Team with Sweep Team, and attack enemy above.\n\n* Turn 2\n** Attack enemy right of Boss Team.\n** Move Sweep Team down and teleport.\n\n* Turn 3\n** Move Boss Team right.\n** Attack enemy above Sweep Team.\n\n* Turn 4\n** Move Boss Team right.\n** Move Sweep Team left.\n** (Enemy to the left will be despawned by disappearing tile.)\n** (Boss Team will be attacked by enemy to the right, then by boss for a 4-turn clear.)\n\n== 4-turn clear ==\nOnly Mystic characters are required. A 3-star clear can be achieved with a second run: simply bring a Mystic team and a Piercing team; do not despawn any enemies; fight enemies away from the boss with the corresponding team; fight the top-right corner with the Piercing team to clear the mob and then forfeit the boss battle; finally, use the Mystic team to clear the boss. Since 6 battles are fought, only 5 of them need to be a S-rank battle to get 3 stars.\n\n* Setup\n** Boss Team left. (3 battles, Mystic)\n** Sweep Team right. (0 battles)\n\n* Turn 1\n** Move Sweep Team up and teleport.\n** Swap Boss Team with Sweep Team, and attack enemy above.\n\n* Turn 2\n** Attack enemy right of Boss Team.\n** Move Sweep Team down and do not teleport.\n\n* Turn 3\n** Move Boss Team right.\n** Move Sweep Team down to trigger 4. The enemy right of the boss will be despawned.\n\n* Turn 4\n** Move Boss Team right.\n** (Boss Team will be attacked by boss for a 4-turn clear.)\n\n----\n'''400 second challenge'''\n* Use the 4-turn clear strategy so that only 3 battles need to be fought."
     },
     {
       "Name": "11-1H",
@@ -350,11 +350,11 @@
     },
     {
       "Name": "11-3H",
-      "Description": "Bossing team left, Clearing team right\n\nMove clearing team down and bossing team up. Use the teleporter.\n\nMove your clearing team to the right. Don't use the teleporter with your clearing team.\n\nMove your bossing team right and attack the enemy above you with your clearing team\n\nKill the boss for a 3-turn clear"
+      "Description": "* Setup\n** Boss Team left (3 battles, Mystic)\n** Sweep Team right (2 battles, Piercing)\n\n* Turn 1\n** Move Sweep Team down.\n** Move Boss Team up and use the teleporter.\n** (Boss Team will be attacked by enemy to the left.)\n\n* Turn 2\n** Move your Sweep Team right. Don't use the teleporter.\n** Move Boss Team right.\n** (Sweep Team will be attacked by enemy below.)\n*Turn 2 IF your sweep team can handle Mystic enemy and you want to grab the gift box.\n** Move your Sweep Team right. Use the teleporter.\n** Move Boss Team right.\n\n* Turn 3\n** Attack the enemy above Sweep Team.\n** Defeat the boss with Boss Team for a 3-turn clear.\n*Turn 3 IF your sweep team can handle Mystic enemy and you want to grab the gift box.\n** The Mystic enemy will go onto the gift box. Defeat them with your sweep team and grab the gift box.\n** Defeat the boss with Boss Team for a 3-turn clear.\n\n----\n'''240 second challenge:'''\n* Setup: Mystic Team at left Start position.\n* Turn 1: Move up and teleport.\n** (Will be attacked by enemy to the left.)\n* Turn 2: Attack enemy to the right.\n* Turn 3: Defeat the boss. (Try to clear each battle in under 80 seconds)"
     },
     {
       "Name": "12-1",
-      "Description": null
+      "Description": "* Setup\n** Boss Team bottom. (2 battles, Mystic)\n** Sweep Team top. (2 battles, Explosive)\n\n* Turn 1\n** Attack enemy to the right of Sweep Team.\n** Move Boss Team bottom-right and teleport.\n** (Enemy to the top will attack Sweep Team)\n\n* Turn 2\n** Move Sweep Team right.\n** Swap Boss Team with Sweep Team.\n** Attack enemy right of Boss Team.\n\n* Turn 3\n** Move Sweep Team down to trigger reveal 2.\n** Move Boss Team down.\n** (The boss will attack Boss Team for a 3-turn clear)"
     },
     {
       "Name": "12-2",
@@ -362,15 +362,15 @@
     },
     {
       "Name": "12-3",
-      "Description": null
+      "Description": "* Setup\n** Sweep Team top. (2 battles, Explosive)\n** Boss Team bottom. (2 battles, Mystic)\n\n* Turn 1\n** Move Sweep Team right and teleport.\n** Move Boss Team up.\n\n* Turn 2\n** Move Sweep Team up-right.\n** (Pursuing enemy will be despawned by disappearing tile.)\n** Swap Boss Team with Sweep Team, and attack enemy left of Boss Team.\n\n* Turn 3\n** Move Sweep Team left and teleport.\n** Move Boss team up.\n** (Sweep Team will be attacked by enemies below and to the right.)\n** (Boss Team will be attacked by Boss for a 3-turn clear.)"
     },
     {
       "Name": "12-4",
-      "Description": null
+      "Description": "* Setup\n** Boss Team bottom. (3 battles, Mystic)\n** Sweep Team top. (2 battles, Explosive)\n\n* Turn 1\n** Attack enemy to the right of Boss Team.\n** Move Sweep Team right and teleport.\n\n* Turn 2\n** Attack enemy bottom-right of Boss Team.\n** Swap Sweep Team with Boss Team.\n** Attack enemy bottom-right of Sweep Team.\n\n* Turn 3\n** Move Sweep Team right onto 3.\n** Teleport Boss Team with 2 and then move to the right.\n\n* Turn 4\n** Attack enemy right of Sweep Team.\n** Move Boss Team right and teleport. \n** (Boss will attack Boss Team for a 4-turn clear)"
     },
     {
       "Name": "12-5",
-      "Description": "Boss-killer team on left side, sweep team on right side (5 turns)\n\nMove bk team to (2) then teleport to the right side\n\nSwap with sweep team, move to tile (1) then teleport\n\nMove sweep team to tile (4), teleport back the bk team to left side (2)\n\nTeleport back sweep team to tile (1) bottom, clear enemy in front of boss team\n\nMove sweep team to the right of tile (3), move bk team to tile/yellow (4)\n\nClear remaining enemy on the right side using sweep team, clear boss using bk team"
+      "Description": "* Setup\n** Boss Team left (3 battles, Mystic)\n** Sweep Team right (3 battles, Explosive)\n\n* Turn 1\n** Move Boss Team up to tile (2) and teleport to the right side.\n** Swap Sweep Team with Boss Team, move up to tile (1), and teleport up.\n\n* Turn 2\n** Move Sweep Team down to tile (4).\n** Move Boss Team up to tile (2), and teleport back to the left side.\n\n* Turn 3\n** Move Sweep Team up to tile (1), and teleport back down. \n** Attack the enemy above with Boss team.\n** (Sweep Team will be attacked by enemy below.)\n\n* Turn 4\n** Attack enemy above with Sweep Team.\n** Move Boss Team left to tile (4).\n** (Boss Team will be attacked by enemy above.)\n\n* Turn 5\n** Attack enemy above with Sweep Team.\n** Defeat the boss using Boss team for a 5-turn clear."
     },
     {
       "Name": "12-1H",
@@ -382,15 +382,15 @@
     },
     {
       "Name": "12-3H",
-      "Description": "Clearing team on top, Bossing team on bottom\n\nAttack the enemy in sight with your Clearing team then swap places with your Bossing team and use the teleporter\n\nGrab the giftbox then move to (4) with your Bossing team\n\nMove bossing team to (1) and move your Clearing team one spot down\n\nUse the teleporter with your Bossing team and move your Clearing team one spot to the left\n\nMove your Clearing team one spot below to (3) and attack the enemy to your left with your Bossing team\n\nAttack the enemy to your right with your Clearing team and kill the boss with your Bossing team for a 6-turn clear\n\n(Skip the giftbox and go directly to (4) on turn 2 for a 5-turn clear)"
+      "Description": "* Setup\n** Sweep Team on top. (3 battles, Explosive)\n** Boss Team on bottom. (3 battles, Mystic)\n\n* Turn 1\n** Attack enemy right of Sweep Team.\n** Swap Boss Team with Sweep Team, and use the teleporter. \n** (Boss Team will be attacked by Enemy to left.)\n\n* Turn 2 (* Alternatively, skip this step to clear in 5 turns.)\n** Grab the giftbox to the right of Boss Team.\n** Make Sweep Team wait at bottom Start position. \n\n* Turn 3\n** Move Boss Team up to tile (4).\n** Move Sweep Team down.\n\n* Turn 4\n** Move Boss Team up to tile (1) and teleport.\n** Move Sweep Team down to tile (3). \n** (Sweep Team will be attacked by enemy to left.)\n\n* Turn 5\n** Attack enemy to the left of Boss Team.\n** Attack enemy to the right of Sweep Team.\n\n* Turn 6\n** Defeat the boss with Boss Team for a 6(*)-turn clear."
     },
     {
       "Name": "13-1",
-      "Description": null
+      "Description": "* Setup\n** Boss Team top (3 battles, Piercing) \n** Sweep Team bottom (1 battle, Piercing)\n\n* Turn 1\n** Move Boss Team down.\n** Move Sweep Team left.\n** (Boss Team will be attacked by enemy below.)\n\n* Turn 2\n** Attack enemy to the right of Boss Team.\n** Attack enemy to the left of Sweep Team.\n\n* Turn 3\n** Move Boss Team right to pick up attack buff.\n** Pass turn.\n** (Boss Team will be attacked by boss for a 3-turn clear.)\n\n----\n'''240 second challenge'''\n* Don't use a Sweep Team.\n* Try to finish each battle under 80 seconds average."
     },
     {
       "Name": "13-2",
-      "Description": null
+      "Description": "* Setup\n** Boss Team top (3 battles, Piercing)\n** Sweep Team bottom (1 battle, Piercing)\n\n* Turn 1\n** Attack enemy below with Boss Team.\n** Move Sweep Team left.\n\n* Turn 2\n** Swap Boss Team with Sweep Team, and attack enemy below Boss Team.\n** Move Sweep Team down.\n** (Sweep Team will be teleported to right Start position from disappearing tile.)\n\n* Turn 3\n** Attack enemy above with Sweep Team.\n** Defeat Boss with Boss Team for a 3-turn clear."
     },
     {
       "Name": "13-3",
@@ -398,7 +398,7 @@
     },
     {
       "Name": "13-4",
-      "Description": null
+      "Description": "* Setup\n** Boss Team left (2 battles, Piercing)\n** Sweep Team right (3 battles, Piercing)\n\n* Turn 1\n** Move Boss Team down.\n** Attack enemy below Sweep Team.\n\n* Turn 2\n** Attack enemy below Sweep Team.\n** Swap Boss Team with Sweep Team, and attack enemy below Boss Team.\n** (Sweep Team will be teleported to left Start position by disappearing tile.)\n\n* Turn 3\n** Attack enemy above Sweep Team.\n** Move Boss Team left.\n** (Boss Team will be attacked by boss for a 3-turn clear.)"
     },
     {
       "Name": "13-5",
@@ -406,15 +406,15 @@
     },
     {
       "Name": "13-1H",
-      "Description": "Bossing Team on top, Clearing Team on bottom\n\nMove Clearing Team to the left and Bossing Team to the cracked cell on top\n\nMove Clearing Team to cracked cell on bottom and swap places with Bossing Team then attack the enemy directly below you\n\nMove Clearing Team to the right and Bossing Team to the left\n\nGrab the giftbox and then Kill the boss for a 4-turn clear"
+      "Description": "* Setup\n** Boss Team top. (4 battles, Piercing/Explosive)\n** Sweep Team bottom. (No battles, Any)\n\n* Turn 1\n** Move Sweep Team left.\n** Move Boss Team down onto broken tile. \n** (Boss Team will be attacked by enemy to the left.)\n\n* Turn 2\n** Move Sweep Team left onto the other broken tile.\n** Swap Boss Team with Sweep Team, and attack enemy below Boss Team.\n** (Sweep Team will be teleported to top Start position.)\n\n* Turn 3\n** Move Sweep Team right. \n** Move Boss Team left. \n** (Boss Team will be attacked by enemy above.)\n\n* Turn 4 \n** Move Sweep team right to grab the gift box.\n** Defeat the boss with Boss Team for a 4-turn clear."
     },
     {
       "Name": "13-2H",
-      "Description": "Bossing team on top, Clearing team on the right\n\nMove Bossing Team to (1) and Clearing team to (2) respectively\n\nMove Clearing team left then swap positions with Bossing Team and attack the enemy directly to your left\n\nAttack the enemy to the right of Clearing team then kill the boss for a 3-turn clear"
+      "Description": "* Setup\n** Boss Team top (4 battles, Piercing/Explosive)\n** Sweep Team right (1 battle, Piercing)\n\n* Turn 1\n** Move Boss Team down.\n** Move Sweep Team left.\n** (Boss Team will be attacked by enemy above.)\n\n* Turn 2\n** Move Sweep Team left.\n** Swap Boss Team with Sweep Team, and then attack enemy to the left of Boss Team. \n** (Boss Team will be attacked by enemy below.)\n** (Sweep Team will be teleported to Start above.)\n\n* Turn 3\n** Attack enemy to the right of Sweep Team.\n** Move Boss Team up to get gift box. (Alternatively, defeat the boss for a 3-turn clear.)\n\n* Turn 4: Defeat the boss with Boss Team for a 4-turn clear."
     },
     {
       "Name": "13-3H",
-      "Description": "Clearing team to the left, Bossing to the right\n\nAttack the middle enemy with your clearing team and move the bossing team to (1) on the map then swap with clearing team and advance to (2) with your bossing team\n\nAttack the tank below using the clearing team and move bossing team towards the boss\n\nGrab the present box using your clearing team and attack the boss for a 4-turn clear"
+      "Description": "*Setup\n** Sweep Team left. (2 battles, Piercing)\n** Boss Team right. (3 battles, Piercing/Explosive)\n\n* Turn 1\n** Move Sweep Team right.\n** Move Boss Team left onto broken tile.\n\n* Turn 2\n** Attack enemy below Sweep team. \n** Swap Boss Team with Sweep Team, and move Boss team down onto broken tile. \n** (Boss Team will be attacked by enemy below.)\n** (Sweep Team will be teleported to right Start position.)\n\n* Turn 3\n** Attack enemy below Sweep Team.\n** Move Boss Team down.\n** (Boss Team will be attacked by enemy to the right.)\n** (Pursuing enemy will be taken out by broken tile.)\n\n* Turn 4\n** Move Sweep Team down to grab gift box.\n** Defeat the boss with Boss Team for a 4-turn clear.\n\n----\n'''320 second challenge:'''\n* Follow the above steps, except don't attack with Sweep Team after Turn 2.\n* Try to clear each battle under 80 seconds average. Aim for under 65 seconds if it takes you 2 minutes to defeat the boss."
     },
     {
       "Name": "14-1",
@@ -422,83 +422,83 @@
     },
     {
       "Name": "14-2",
-      "Description": null
+      "Description": "* Setup\n** Explosive Team left\n** Mystic Team right\n\n* Turn 1\n** Attack enemy above Mystic Team.\n** Have Explosive Team wait in position.\n\n* Turn 2\n** Move Mystic Team left.\n** Swap Explosive Team with Mystic Team, and attack enemy below Explosive Team.\n\n* Turn 3\n** Move Mystic Team up to open path to boss.\n** Move Explosive Team left.\n\n* Turn 4\n** Attack enemy right of Mystic Team.\n** Defeat boss for a 4-turn clear."
     },
     {
       "Name": "14-3",
-      "Description": null
+      "Description": "* Setup\n** Explosive Team top.\n** Mystic Team bottom.\n\n* Turn 1\n** Move Explosive Team down.\n** Attack enemy right of Mystic Team.\n\n* Turn 2\n** Move Explosive Team right.\n** Move Mystic Team up.\n** (Mystic Team will be teleported to top Start position.)\n\n* Turn 3\n** Attack enemy above Explosive Team.\n** Move Mystic Team left.\n** (Mystic Team will be attacked by enemy to the left.)\n\n* Turn 4\n** Move Mystic Team up.\n** Move Explosive Team right-down.\n** (Explosive Team will be attacked by boss for a 4-turn clear.)"
     },
     {
       "Name": "14-4",
-      "Description": null
+      "Description": "* Setup\n** Mystic Team left.\n** Explosive Team right.\n\n* Turn 1\n** Attack enemy above Mystic Team.\n** Move Explosive Team left.\n\n* Turn 2\n** Move Mystic Team up-left.\n** Swap Explosive Team with Mystic Team, and attack enemy above Explosive Team.\n** (Mystic Team will be teleported to right Start position.)\n\n* Turn 3\n** Move Explosive Team left.\n** Move Mystic Team down.\n\n* Turn 4\n** Attack enemy below Mystic Team.\n** Attack enemy below Explosive Team.\n** (Boss will attack Explosive Team for a 4-turn clear.)"
     },
     {
       "Name": "14-5",
-      "Description": null
+      "Description": "* Setup\n** Explosive Team right.\n** Mystic Team left.\n\n* Turn 1\n** Attack enemy above Explosive Team.\n** Attack enemy above Mystic Team.\n\n* Turn 2\n** Move Explosive Team left.\n** Move Mystic Team right.\n\n* Turn 3\n** Move Mystic Team down.\n** Swap Explosive Team with Mystic Team, and attack enemy below Explosive Team.\n** (Mystic Team will be attacked by pursuing enemy to the right, then teleport to right Start position.)\n\n* Turn 4\n** Move Mystic Team down-left.\n** Move Explosive Team down.\n** (Mystic Team will be attacked by enemy to the left.)\n** (Explosive Team will be attacked by boss for a 4-turn clear.)"
     },
     {
       "Name": "14-1H",
-      "Description": "Clearing team below, Bossing team above.\n\nMove both teams to the right.\n\nMove bossing team to the right, attack enemy above with clearing.\n\nAttack enemy with bossing team, move clearing team above so it will go to the start above.\n\nMove clearing team to (1), then move bossing team to the new platform.\n\nGrab gift box and attack boss for a 5 turn clear."
+      "Description": "* Setup\n** Boss Team above (Explosive, 2 battles)\n** Sweep Team below (Mystic, 2 battles)\n\n* Turn 1\n** Move both teams to the right.\n\n* Turn 2\n** Move Boss Team to the right.\n** Attack enemy above Sweep Team.\n\n* Turn 3\n** Attack enemy right of Boss Team.\n** Move Sweep Team up so it will go to the top Start position.\n\n* Turn 4\n** Move Sweep Team left to (1).\n** Move Boss Team down to the new platform.\n** (Sweep Team will be attacked by enemy to the right.)\n\n* Turn 5\n** Move Sweep Team down-left to grab the gift box.\n** Defeat the boss for a 5-turn clear."
     },
     {
       "Name": "14-2H",
-      "Description": "Bossing team to the right, Clearing team to the left.\n\nAttack enemy below with bossing. Move clearing team above.\n\nMove bossing left first and swap with clearing team, attacking the enemy above.\n\nMove clearing to (1), move bossing left.\n\nGrab gift box and attack boss for a 4 turn clear."
+      "Description": "* Setup\n** Boss Team right (Explosive, 3 battles)\n** Sweep Team left (Mystic, 2 battles)\n\n* Turn 1\n** Attack enemy below Boss Team. (''Do this step first!'')\n** Move Sweep Team up.\n** (Boss Team will be attacked by enemy to the left.)\n\n* Turn 2\n** Move Boss Team left.\n** Swap Sweep Team with Boss Team, and attack enemy above Sweep Team.\n** (Boss Team will be teleported to bottom Start position.)\n\n* Turn 3\n** Move Sweep Team left onto tile (1).\n** Move Boss Team left.\n** (Sweep Team will be attacked by enemy to the left.)\n\n* Turn 4\n** Move Sweep Team up to grab gift box.\n** Defeat the boss for a 4-turn clear."
     },
     {
       "Name": "14-3H",
-      "Description": "* Clearing team left, Bossing team right\n* Clearing team down, Bossing team left\n* Clearing team down to activate space 1,  Bossing team left\n* Clearing team down, Bossing team swap with Clearing team then move left down to activate space 2\n* Clearing team up to engage enemy, Bossing team left to get gift  Boss will attack on their turn for a 4 turn clear"
+      "Description": "* Setup\n** Sweep Team left (Mystic, 3 battles)\n** Boss Team right (Explosive/Piercing, 3 battles)\n\n* Turn 1\n** Attack enemy below Sweep Team.\n** Move Boss Team left.\n** (Sweep Team will be attacked by enemy above.)\n** (Boss Team will be attacked by enemy above.)\n\n* Turn 2\n** Move Sweep Team down to activate tile (1).\n** Move Boss Team left onto cracked tile.\n\n* Turn 3\n** Move Sweep Team down.\n** Swap Boss Team with Sweep Team, and move Boss Team down-left to activate tile (2).\n** (Boss Team will be attacked by enemy to the right.)\n** (Sweep Team will be teleported by broken tile to right Start position.)\n\n* Turn 4\n** Attack enemy above Sweep Team.\n** Move Boss Team left to grab gift box. \n** (Boss will attack Boss Team for a 4-turn clear.)"
     },
     {
       "Name": "15-1",
-      "Description": null
+      "Description": "* Setup\n** Boss Team left (Mystic, 3 battles)\n** Sweep Team right (Mystic, 1 battle)\n\n* Turn 1\n** Move Boss team right.\n** Move Sweep team up and teleport.\n\n* Turn 2\n** Move Sweep team down-right and grab the attack buff.\n** Swap Boss Team and Sweep Team, and attack enemy to the right with Boss Team.\n** (Sweep Team will be teleported to the left.)\n\n* Turn 3\n** Attack enemy below Sweep team.\n** Attack enemy below Boss team.\n** (Boss will attack for a 3-turn clear.)"
     },
     {
       "Name": "15-2",
-      "Description": null
+      "Description": "* Setup\n** Boss Team top (Mystic, 3 battles)\n** Sweep Team bottom (Mystic, 1 battle)\n\n* Turn 1\n** Move Boss Team right.\n** Move Sweep Team up.\n** (Boss Team will be attacked by enemy above.)\n\n* Turn 2\n** Move Sweep Team up-right.\n** Swap Boss Team with Sweep Team, and move Boss team right to pick up DEF buff.\n** (Boss Team will be attacked by enemy below.)\n** (Sweep Team will be teleported to left Start position by disappearing tile.)\n\n* Turn 3\n** Move Sweep Team down and teleport.\n** Move Boss Team up.\n** (Sweep Team will be attacked by enemy to the right.)\n** (Boss Team will be attacked by boss for a 3-turn clear.)"
     },
     {
       "Name": "15-3",
-      "Description": null
+      "Description": "* Setup\n** Boss Team left (Mystic, 4 battles)\n** Sweep Team right (Mystic, 1 battle)\n\n* Turn 1\n** Move Boss Team down to tile (1) and teleport.\n** Attack enemy below Sweep Team.\n\n* Turn 2\n** Attack enemy below Boss Team.\n** Move Sweep Team down-right.\n** (Boss Team will be attacked by enemies above and below.)\n\n* Turn 3\n** Move Sweep Team down to tile (2) and teleport.\n** Swap Boss Team with Sweep Team, and defeat the boss for a 3-turn clear."
     },
     {
       "Name": "15-4",
-      "Description": null
+      "Description": "* Setup\n** Sweep Team top (Mystic, 3 battles)\n** Boss Team bottom (Mystic, 3 battles)\n\n* Turn 1\n** Move Sweep Team down-right to grab ATK buff.\n** Attack enemy left of Boss Team.\n** (Sweep Team will be attacked by enemy to the left.)\n\n* Turn 2\n** Move Sweep Team right and teleport.\n** Move Boss Team up.\n** (Sweep Team will be attacked by enemy to the right.)\n\n* Turn 3\n** Move Sweep Team down-left.\n** Swap Boss Team with Sweep Team, and attack enemy to the left.\n\n* Turn 4\n** Attack enemy to the right of Sweep Team.\n** Defeat the boss for a 4-turn clear."
     },
     {
       "Name": "15-5",
-      "Description": null
+      "Description": "* Setup\n** Boss Team top (Mystic, 4 battles)\n** Sweep Team bottom (Mystic, 2 battles)\n\n* Turn 1\n** Move Boss Team up to tile (1) and teleport.\n** Move Sweep Team up.\n\n* Turn 2 \n** Move Boss Team down.\n** Move Sweep Team right.\n** (Boss Team will be attacked by enemy to the left.)\n\n* Turn 3\n** Attack enemy below Boss Team.\n** Attack enemy above Sweep Team.\n** (Boss Team will be attacked by enemy to the right.)\n** (Pursuing enemy will be despawned by disappearing tile.)\n\n* Turn 4\n** Move Boss Team down.\n** Move Sweep Team up to tile (2) and teleport.\n** (Sweep Team will be attacked by enemy to the left.)\n\n* Turn 5\n** Move Sweep Team right.\n** Swap Boss Team with Sweep Team, and defeat boss with Boss Team for a 5-turn clear."
     },
     {
       "Name": "15-1H",
-      "Description": "* Bossing team right, clearing team left\n\n# Move bossing team right and teleport, clearing team up\n# Move both team up\n# Clearing team up, swap teams, move bossing team further up\n# After clearing team was thrown back to the start, grab item box. Move bossing team left, end of turn, for 4-turn clear."
+      "Description": "* Setup\n** Sweep Team left (Mystic, 2 battles)\n** Boss team right (Mystic, 2 battles)\n* Turn 1\n** Move Sweep Team up.\n** Move Boss Team right onto tile (1) and teleport.\n* Turn 2\n** Attack enemy above Sweep Team.\n** Move Boss Team up onto disappearing tile.\n** (Boss Team will be attacked by enemy above.)\n* Turn 3\n** Move Sweep team up.\n** Swap Boss team with Clearing team, then move Boss Team up.\n** (Sweep Team will be teleported to right Start position by disappearing tile.)\n* Turn 4\n** Move Sweep Team up to grab gift box\n** Move Boss Team left.\n** (Sweep team will be attacked by enemy below.)\n** (Boss Team will be attacked by Boss below.)"
     },
     {
       "Name": "15-2H",
-      "Description": "* Clearing team left, Bossing team right\n* Clearing team left through 2, bossing team swap with clearing team then through 1\n* Clearing team right, bossing team up\n* Clearing team right, bossing team up\n* Clearing team grab gift, bossing team attack boss for a 4 turn clear."
+      "Description": "* Setup\n** Sweep Team left (Mystic, 2 battles)\n** Boss Team right (Mystic, 4 battles)\n\n* Turn 1\n** Move Sweep Team left to tile (2) and teleport.\n** Swap Boss Team with Sweep Team, move Boss Team down to tile (1) and teleport.\n** (Boss Team will be attacked by enemy to the right.)\n** (Sweep Team will be attacked by enemy to the left.)\n\n* Turn 2\n** Move Sweep Team right.\n** Move Boss Team up.\n** (Sweep Team will be attacked by enemy to the right.)\n** (Boss Team will be attacked by enemy above.)\n\n* Turn 3\n** Move Sweep Team right.\n** Attack enemy above Boss Team.\n\n* Turn 4\n** Move Sweep Team up to grab gift box.\n** Defeat boss with Boss Team for a 4-turn clear."
     },
     {
       "Name": "15-3H",
-      "Description": "Team A starts at top, Team B starts at middle, Team C (main team) starts at bottom\n\n\nTeam A takes teleporter (3). Team B moves right, defeats enemy. Team C takes teleporter (1).\n\nTeam B goes right. Team A swaps with B and goes right. Team C swaps with A and goes right.\n\nTeam A moves down onto cracked tile. Team B takes teleporter (3), and takes teleporter (2). Team C moves right, defeats enemy.\n\nTeam B moves right, defeats enemy. Team C moves down. Team A ends turn on cracked tile (no movement).\n\nTeam B moves up, defeats enemy. Team A moves down, collects gift. Team C defeats boss."
+      "Description": "* Setup\n** Team A top (Mystic, 1 battle)\n** Team B middle (Mystic, 3 battles)\n** Team C bottom (Mystic/Explosive, 3 battles incl. boss) \n\n* Turn 1\n** Move Team A right to tile (3) and teleport. \n** Attack enemy to the right of Team B. \n** Move Team C left to tile (1) and teleport.\n\n* Turn 2\n** Move Team B right. \n** Swap Team A with Team B, and move Team A right.\n** Swap Team C with Team A, and move Team C right.\n\n* Turn 3\n** Move Team A down onto cracked tile. \n** Teleport Team B using tile (3), then move Team B up to tile (2) and teleport again. \n** Attack enemy to the right of Team C.\n** (Team A will be attacked by enemy below.)\n\n* Turn 4\n** Attack enemy to the right of Team B.\n** Move Team C down.\n** Have Team A wait on the cracked tile (no movement).\n** (Team C will be attacked by enemy to the right.)\n** (Team A will be teleported to bottom Start position.)\n\n* Turn 5\n** Attack enemy above Team B.\n** Move Team A down to collect gift box.\n** Defeat the boss with Team C for a 5-turn clear.\n\n----\n\n'''400 second challenge'''\n* Use just Team C from bottom Start.\n* Move left and teleport, then move right 3 times, and down twice. (3 battles)\n* Try to finish each battle in under 130 seconds."
     },
     {
       "Name": "16-1",
-      "Description": null
+      "Description": "* Setup\n** Boss Team top (Piercing, 2 battles)\n** Sweep Team bottom (Mystic, 2 battles)\n\n* Turn 1\n** Move Boss Team down on the defence buff.\n** Move Sweep Team left.\n\n* Turn 2\n** Move Boss Team down on the fragile tile.\n** Attack enemy left of Sweep Team.\n\n* Turn 3\n** Attack enemy below Boss Team.\n** Move Sweep Team left on the fragile tile.\n** (Sweep Team will be teleported on the top starting tile.)\n\n* Turn 4\n** Move Sweep Team up onto tile (1).\n** Move Boss Team left.\n** (Sweep Team will be attacked by enemy on the right.)\n** (Boss Team will be attacked by boss on the left.)"
     },
     {
       "Name": "16-2",
-      "Description": null
+      "Description": "* Setup\n** Sweep Team top (Mystic, 2 battles)\n** Boss Team bottom (Piercing, 2 battles)\n\n* Turn 1\n** Attack enemy to the right of Sweep Team.\n** Move Boss Team right.\n\n* Turn 2\n** Move Boss Team up onto broken tile.\n** Move Sweep Team right onto tile (1).\n** (Pursuing enemy below Boss team will despawn from disappearing tile.)\n** (Boss Team will be attacked by the pursuing enemy to the right.)\n\n* Turn 3\n** Move Boss Team right to pick up ATK buff.\n** Move Sweep Team down onto broken tile.\n** (Sweep Team will be teleported to bottom Start position.)\n\n* Turn 4\n** Attack enemy below Sweep Team.\n** Defeat boss with Boss Team for a 4-turn clear."
     },
     {
       "Name": "16-3",
-      "Description": null
+      "Description": "* Setup\n** Boss Team left (Piercing, 2 battles)\n** Sweep Team right (Mystic, 3 battles)\n\n* Turn 1\n** Attack enemy to the right of Boss Team.\n** Move Sweep Team left.\n\n* Turn 2\n** Move Boss Team right onto broken tile.\n** Move Sweep Team up to grab ATK buff.\n\n* Turn 3\n** Attack enemy above Sweep Team.\n** Swap Boss Team with Sweep Team, and move Boss Team up.\n** (Sweep Team will be teleported to left Start position.)\n\n* Turn 4\n** Attack enemy below Sweep Team.\n** Move Boss Team right onto tile (1).\n** (Sweep Team will be teleported to left Start position again.)\n\n* Turn 5\n** Attack enemy above Sweep Team.\n** Defeat boss with Boss Team for a 5-turn clear."
     },
     {
       "Name": "16-4",
-      "Description": null
+      "Description": "* Setup\n** Boss Team left (Piercing, 3 battles)\n** Sweep Team right (Mystic, 3 battles)\n\n* Turn 1\n** Attack enemy above Sweep Team.\n** Move Boss Team up.\n\n* Turn 2\n** Attack enemy above Sweep Team.\n** Swap Boss Team with Sweep Team, and attack enemy above Boss Team.\n** (Sweep Team will be teleported to left Start position.)\n\n* Turn 3\n** Move Sweep Team down-right.\n** (Enemy below boss will be despawned by disappearing tile.)\n** Attack enemy to the right of Boss Team.\n** (Sweep Team will be attacked by enemy to the left.)\n** (Boss team will be attacked by boss for a 3-turn clear.)"
     },
     {
       "Name": "16-5",
-      "Description": null
+      "Description": "* Setup\n** Boss Team left (Piercing, 3 battles)\n** Sweep Team right (Mystic, 3 battles)\n\n* Turn 1\n** Attack enemy below Boss Team.\n** Move Sweep Team left to pick up DEF buff.\n** (Sweep Team will be attacked by enemy below.)\n\n* Turn 2\n** Move Boss Team right onto broken tile.\n** Move Sweep Team down.\n\n* Turn 3\n** Move Sweep Team down.\n** Swap Boss Team with Sweep Team, and attack enemy right of Boss Team.\n** (Sweep Team will be teleported to left Start position.)\n\n* Turn 4\n** Move Boss Team right.\n** Attack enemy left of Sweep Team.\n\n* Turn 5\n** Move Boss Team down to pick up HP recovery. (''Do this step first!'')\n** Move Sweep Team up onto tile (1).\n** (Sweep Team will be attacked by enemy above.)\n** (Boss Team will be attacked by boss for a 5-turn clear.)"
     },
     {
       "Name": "16-1H",
@@ -522,7 +522,7 @@
     },
     {
       "Name": "17-3",
-      "Description": null
+      "Description": "Set the position of Bossing team(left) and Clearing team(right).\n\n# Bossing team take the buff and Clearing team go to top left,\n# Bossing team attack the enemy (right side from the current Bossing team's position) and Clearing team go to 2(top left from the current Clearing team's position),\n# Bossing team go to 2(top right from the current Bossing team's position) '''then''' Clearing team will go to 1(right side of the map) '''then''' attack enemy(top left from the current Clearing team's position).\n# Bossing team go to the Boss enemy."
     },
     {
       "Name": "17-4",
@@ -638,7 +638,7 @@
     },
     {
       "Name": "20-3H",
-      "Description": "Team A (Red) on the bottom-left, Team B (Red, Boss) bottom-right, Team C (Yellow) top.\n\nTurn 1: Team A goes top-left. Team B goes top-left. Team C goes right.\n\nTurn 2: Team A goes top-left. Team B goes top-right. Team C goes right.\n\nTurn 3: Team A goes left. Team C goes right. Team B swaps with team C and goes right.\n\nTurn 4: Team A goes top-left. Team B goes bottom-right. Team C goes bottom-left.\n\nTurn 5: Team A goes top-left. Team C goes bottom-right and grabs gift. Team B goes bottom-left and attacks boss."
+      "Description": "Team A (Red) on the bottom-left, Team B (Red, Boss) bottom-right, Team C (Yellow) top.\n\nTurn 1: Team A goes top-left. Team B goes top-left. Team C goes right.\n\nTurn 2: Team A goes top-left. Team B goes top-right. Team C goes right.\n\nTurn 3: Team A goes left. Team C goes right. Team B swaps with team C and goes right.\n\nTurn 4: Team A goes top-left. Team B goes bottom-right. Team C goes bottom-right.\n\nTurn 5: Team A goes top-left. Team C goes bottom-left and grabs gift. Team B goes bottom-left and attacks boss."
     },
     {
       "Name": "21-1",
@@ -662,15 +662,15 @@
     },
     {
       "Name": "21-1H",
-      "Description": null
+      "Description": "Team A (Blue, Boss) on the right, Team B (Red) on the left\n\nTurn 1: Team A goes bottom-left , Team B goes right\n\nTurn 2: Team A goes bottom-left onto the drone, Team B swaps with Team A, then goes top-right (onto the [3] switch)\n\nTurn 3: Team A goes bottom-right, Team B goes left\n\nTurn 4: Team B goes top-left, Team A goes right\n\nTurn 5: Team A goes top-right, Team B moves left to grab gift box. Boss will move to attack Team A."
     },
     {
       "Name": "21-2H",
-      "Description": null
+      "Description": "Team A (Blue, Boss) on top, Team B (Red) on bottom\n\nTurn 1: Team A moves right (onto drone), Team B moves top right\n\nTurn 2: Team B moves top-right, Team A swaps with Team B, then Team A moves right (to fight)\n\nTurn 3: Team A moves top-right, then Team B moves top-right\n\nTurn 4: Team A moves top-left, Team B swaps with Team A, then Team B moves top-right (onto [1])\n\nTurn 5: Team A moves top-left, Team B moves top-right. Boss and enemy will move to attack both teams."
     },
     {
       "Name": "21-3H",
-      "Description": null
+      "Description": "Team A (Blue, Boss) on the left, Team B (Red) on bottom, Team C (Blue) on right\n\nTurn 1: Team B moves top-left, Team A moves bottom-right, Team C moves top-left\n\nTurn 2: Team B moves top-left, Team A swaps with Team B and moves bottom-right (to activate [2]), Team C moves left\n\nTurn 3: Team A moves top-right, Team B moves top-right, Team C moves right (to activate [4] again)\n\nTurn 4: Team A moves top-right, Team B moves right, Team C moves left\n\nTurn 5: Team B moves right, Team C moves left, then Team A swaps with Team C, then swaps with Team B, and moves top-right (to attack Boss)"
     },
     {
       "Name": "3-A",
@@ -722,15 +722,15 @@
     },
     {
       "Name": "22-1H",
-      "Description": null
+      "Description": "Team A (Yellow, Boss) on the bottom, Team B (Blue) on the top\n\nTurn 1: Team A moves top-left onto drone, Team B moves top-right and takes the [1] teleporter\n\nTurn 2: Team B moves bottom-right, then Team A moves left to activate [2], moving Team B\n\nTurn 3: Team A moves top-left, Team B moves right\n\nTurn 4: Team B moves top-right, then Team A moves top-right\n\nTurn 5: Team B moves top-left, then Team A moves right"
     },
     {
       "Name": "22-2H",
-      "Description": null
+      "Description": "Team A (Yellow, Boss) on the right, Team B (Blue) on the left\n\nTurn 1: Team A moves bottom-left, Team B moves top-right\n\nTurn 2: Team A moves left, Team B moves right\n\nTurn 3: Team A swaps with Team B, then Team B moves right to activate [2] which moves Team A, then Team A moves left\n\nTurn 4: Team A moves top-left, Team B moves left\n\nTurn 5: Team A moves top-right, Team B moves top-left"
     },
     {
       "Name": "22-3H",
-      "Description": null
+      "Description": "Team A (Boss, Yellow) on the top-right, Team B (Blue) on the bottom, Team C (Yellow) on the left\n\nTurn 1: Team A moves bottom-right, Team B moves top-left, Team C moves top-left\n\nTurn 2: Team A moves bottom-right, Team B swaps with Team A, then Team B moves top-left, Team C moves left\n\nTurn 3: Team A moves top-left, Team B swaps with Team A, then Team B moves left, Team C moves bottom-left\n\nTurn 4: Team C moves bottom-left, then Team B moves top-left to move Team C, Team A moves top-left\n\nTurn 5: Team B moves top-right, Team C moves right, then Team A swaps with Team B, then Team A swaps with Team C, and moves top-right"
     },
     {
       "Name": "23-1",
@@ -754,14 +754,46 @@
     },
     {
       "Name": "23-1H",
-      "Description": null
+      "Description": "Team A (Red, Boss) on the bottom, Team B (Yellow) on the top.\n\nTurn 1: Team A moves right and attack the enemy, Team B moves bottom-right.\n\nTurn 2: Team A moves top-right, Team B moves bottom-right.\n\nTurn 3: Team B moves right and uses the teleport, Team A moves top-right.\n\nTurn 4: Team B moves top-left to unlock tile, Team A moves top-right into the new tile.\n\nTurn 5: Team A switches with team B and moves top-right, Team B moves top-left.\n\nTurn 6: Team A moves top-right, team B moves left to get the gift."
     },
     {
       "Name": "23-2H",
-      "Description": null
+      "Description": "Team A (Red, Boss) on the left, Team B (Yellow) on the right.\n\nTurn 1: Team A moves right, Team B moves bottom-left and take the teleport.\n\nTurn 2: Team B moves top-left to activate the switch, Team A moves top-right and take the teleport.\n\nTurn 3: Team B moves left, Team A moves bottom-left.\n\nTurn 4: Team B moves back to the right, Team A moves bottom-right.\n\nTurn 5: Team B moves left (again!), Team A moves bottom-left.\n\nTurn 6: Team B moves top-left and grabs the gift, Team A moves left to attack the boss."
     },
     {
       "Name": "23-3H",
+      "Description": "Team A (Red, Boss) left, Team B (Red) top, Team C (Yellow) right.\n\nTurn 1: Team A moves down right, Team B moves right and teleports, Team C moves left.\n\nTurn 2: Team A swaps with Team C then Team B moves right, Team C moves left, Team A moves down. \n\nTurn 3: Team B swaps with Team C to move top left, Team C moves left and teleports. Team A takes no action.\n\nTurn 4: Team C moves top left, Team A moves down right, Team B moves right.\n\nTurn 5: Team C picks up chest, Team B moves top to attack, Team A attacks boss.\n\nCredits: [https://www.youtube.com/watch?v=l5xlEy8Ubq8 Sairento-kun]"
+    },
+    {
+      "Name": "24-1",
+      "Description": null
+    },
+    {
+      "Name": "24-2",
+      "Description": null
+    },
+    {
+      "Name": "24-3",
+      "Description": null
+    },
+    {
+      "Name": "24-4",
+      "Description": null
+    },
+    {
+      "Name": "24-5",
+      "Description": null
+    },
+    {
+      "Name": "24-1H",
+      "Description": null
+    },
+    {
+      "Name": "24-2H",
+      "Description": null
+    },
+    {
+      "Name": "24-3H",
       "Description": null
     }
   ]

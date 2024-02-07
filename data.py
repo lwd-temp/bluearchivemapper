@@ -68,7 +68,7 @@ def load_data(path_primary, path_secondary, path_translation):
         gacha_groups=load_gacha_groups(path_primary),
         items=load_items(path_primary),
         equipment=load_equipment(path_primary),
-        localization=load_localization(path_primary, path_secondary, path_translation),
+        localization=load_combined_localization(path_primary, path_secondary, path_translation, 'LocalizeEtcExcelTable.json'),
         stages=None, #load_stages(path_primary),
     )
 
@@ -137,30 +137,28 @@ def load_translations(path):
     )
 
 
-def load_localization(path_primary, path_secondary, translation):
-    data_primary = load_file(os.path.join(path_primary, 'Excel', 'LocalizeEtcExcelTable.json'), key='Key')
-    data_secondary = load_file(os.path.join(path_secondary, 'Excel', 'LocalizeEtcExcelTable.json'), key='Key')
+def load_combined_localization(path_primary, path_secondary, path_translation, filename, key='Key'):
+    data_primary = load_file(os.path.join(path_primary, 'Excel', filename), key)
+    data_secondary = load_file(os.path.join(path_secondary, 'Excel', filename), key)
     data_aux = None
 
     index_list = list(data_primary.keys())
     index_list.extend(x for x in list(data_secondary.keys()) if x not in index_list)
 
-
-    if os.path.exists(os.path.join(translation, 'LocalizeEtcExcelTable.json')):
-        print(f'Loading additional translations from {translation}/LocalizeEtcExcelTable.json')
-        data_aux = load_file(os.path.join(translation, 'LocalizeEtcExcelTable.json'))
+    if os.path.exists(os.path.join(path_translation, filename)):
+        print(f'Loading additional translations from {path_translation}/{filename}')
+        data_aux = load_file(os.path.join(path_translation, filename), key)
 
         index_list.extend(x for x in list(data_aux.keys()) if x not in index_list)
 
     for index in index_list:
         try: 
             if data_aux != None and index in data_aux:
+                #print(f'Loading aux translation {index}')
                 data_primary[index] = data_aux[index] 
-                #print(f'Loaded aux translation {index}')
             else :
+                #print(f'Loading secondary data translation {index}')
                 data_primary[index] = data_secondary[index] 
-                #print(f'Loaded aux translation {index}')
-            #print (f'FOUND secondary data for localize item {index}')
         except KeyError:
             #print (f'No secondary data for localize item {index}')
             continue
