@@ -7,14 +7,14 @@
 }}
 
 [% if mission.difficulty != 'Extra' -%]
-=Map=
+==Map==
 {{MissionMap
 | Filename = [[ mission.filename ]]
 }}
 
 [% endif -%]
 
-=Drops=
+==Drops==
 {{MissionRewards
 [% for reward in mission.rewards.get('FirstClear', []) -%]
 | FirstClear[[ loop.index ]] = [[ reward.name ]]
@@ -34,7 +34,7 @@
 [%- endfor -%]
 }}
 [% if mission.strategy %]
-=Strategy=
+==Strategy==
 [[ mission.strategy ]]
 [% endif %]
 [% raw %][[Category:Missions|[% endraw %][[ mission.sortkey ]][% raw %]]][% endraw %]
